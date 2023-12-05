@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Home() {
-  return <div className="">Skeldus</div>;
+  return <div className="pt-24 bg-[url('/hero_bg.svg')] h-screen bg-cover">Skeldus</div>;
 }
