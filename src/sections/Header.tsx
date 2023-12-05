@@ -17,7 +17,7 @@ const Header: React.FC = () => {
   }, []);
 
   return (
-    <div
+    <header
       className={`fixed top-0 left-0 right-0 h-24 p-4 ${
         isScrolled
           ? "bg-gradient-to-r from-black to-[#313D46]"
@@ -28,16 +28,34 @@ const Header: React.FC = () => {
         <div className="logo">
           {" "}
           {isScrolled ? (
-            <Image src="/logo_2.svg" width={60} height={60} alt="Logo" />
+            <Image
+              src="/logo_2.svg"
+              width={60}
+              height={60}
+              alt="Logo"
+              className="cursor-pointer"
+            />
           ) : (
-            <Image src="/logo.svg" width={147} height={34} alt="Logo" />
+            <Image
+              src="/logo.svg"
+              width={147}
+              height={34}
+              alt="Logo"
+              className="cursor-pointer"
+            />
           )}
         </div>
         <div className="menu-icon">
-          <Image src="/bar_menu.svg" width={60} height={60} alt="bar_menu" />
+          <Image
+            src="/bar_menu.svg"
+            width={60}
+            height={60}
+            alt="bar_menu"
+            className="cursor-pointer"
+          />
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 
