@@ -57,7 +57,7 @@ const ParallaxHero = () => {
   return (
     <section>
       <div className="relative" style={{ height: isMobile ? "100vh" : "250vh" }}>
-        <div className="h-screen sticky top-0 flex justify-center items-center bg-gradient-to-r from-black to-[#313D46]">
+        <div className="h-screen sticky top-0 flex justify-center items-center">
           <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-start container mx-auto z-30 px-5 md:px-auto">
             {opacity !== 0 && (
               <>
