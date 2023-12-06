@@ -1,5 +1,10 @@
+import ParallaxHero from "@/sections/ParallaxHero";
+
 export default function Home() {
   return (
-    <section className="pt-24 bg-[url('/hero_bg.svg')] h-screen bg-cover"></section>
+    <section className="flex flex-col">
+      <ParallaxHero />
+      <div className="h-screen bg-blue-400">hello</div>
+    </section>
   );
 }

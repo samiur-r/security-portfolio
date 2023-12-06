@@ -20,9 +20,9 @@ const Header: React.FC = () => {
     <header
       className={`fixed top-0 left-0 right-0 h-24 p-4 ${
         isScrolled
-          ? "bg-gradient-to-r from-black to-[#313D46]"
+          ? "bg-gradient-to-r from-black to-[#313D46] shadow-lg"
           : "bg-transparent"
-      } transition-all duration-300 ease-in-out`}
+      } transition-all duration-300 ease-in-out z-20`}
     >
       <div className="flex justify-between items-center h-full container mx-auto">
         <div className="logo">
