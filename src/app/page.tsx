@@ -1,3 +1,4 @@
+import Card from "@/components/Card";
 import Contact from "@/sections/Contact";
 import ParallaxHero from "@/sections/ParallaxHero";
 

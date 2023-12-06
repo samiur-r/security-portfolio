@@ -8,7 +8,7 @@ const Contact = () => {
         <div className="flex flex-col gap-3 px-12 py-16">
           <h3 className="text-xl md:text-3xl font-glancyr">HAVE AN INQUIRY?</h3>
           <h2 className="text-3xl md:text-5xl font-bold font-glancyr">
-            Let's talk about it!
+            Let&apos;s talk about it!
           </h2>
           <div className="mt-8">
             <button className="text-start py-1 px-0 border-b border-[#E5E7E8] transition duration-300">
