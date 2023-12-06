@@ -5,8 +5,11 @@ import React, { useState, useEffect } from "react";
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    setIsMobile(window.innerWidth < 768);
+
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
     };
@@ -30,8 +33,8 @@ const Header: React.FC = () => {
           {isScrolled ? (
             <Image
               src="/logo_2.svg"
-              width={60}
-              height={60}
+              width={isMobile ? 40 : 60}
+              height={isMobile ? 40 : 60}
               alt="Logo"
               className="cursor-pointer"
             />
@@ -48,8 +51,8 @@ const Header: React.FC = () => {
         <div className="menu-icon">
           <Image
             src="/bar_menu.svg"
-            width={60}
-            height={60}
+            width={isMobile ? 40 : 60}
+            height={isMobile ? 40 : 60}
             alt="bar_menu"
             className="cursor-pointer"
           />
