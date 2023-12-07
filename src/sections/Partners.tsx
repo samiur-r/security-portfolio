@@ -1,5 +1,4 @@
 import Card from "@/components/Card";
-import React from "react";
 
 const partners = [
   {
@@ -25,16 +24,26 @@ const partners = [
 
 const Partners = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 px-5 container md:mx-auto">
-      {partners.map((partner) => (
-        <Card
-          key={partner.id}
-          topImageSrc={partner.topImageSrc}
-          headline={partner.headline}
-          bodyText={partner.bodyText}
-        />
-      ))}
-    </div>
+    <section className="mt-20">
+      <div className="container md:mx-auto px-5 md:px-0 mb-4 md:mb-16">
+        <h6 className="text-xl md:text-3xl font-glancyr">
+          powerful collaborations
+        </h6>
+        <h2 className="font-glancyr font-bold text-3xl md:text-5xl max-w-2xl mt-5">
+          Meet our Partners
+        </h2>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 px-5">
+        {partners.map((partner) => (
+          <Card
+            key={partner.id}
+            topImageSrc={partner.topImageSrc}
+            headline={partner.headline}
+            bodyText={partner.bodyText}
+          />
+        ))}
+      </div>
+    </section>
   );
 };
 
