@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 
 type CardProps = {
@@ -24,14 +24,13 @@ const Card: React.FC<CardProps> = ({
   ctaText,
   onCtaClick,
 }) => {
-  useEffect(() => {
-    console.log(backgroundColor);
-  }, [backgroundColor]);
   return (
     <div
       className={`px-4 py-12 rounded-lg shadow-md ${
-        backgroundColor ? `bg-[${backgroundColor}]` : "bg-transparent"
-      } ${backgroundColor ? "rounded-lg" : "border"}`}
+        backgroundColor
+          ? `bg-[${backgroundColor}] rounded-lg`
+          : "bg-transparent border"
+      }`}
     >
       {topImageSrc && (
         <div className="h-12 w-12 relative">
@@ -43,11 +42,13 @@ const Card: React.FC<CardProps> = ({
           />
         </div>
       )}
-      {topText && (
-        <div className="">{topText}</div>
-      )}
-      <h2 className="text-3xl font-glancyr h-16 mb-5 mt-8 max-w-xs">{headline}</h2>
-      <p className={`text-bas ${ctaText && !topText ? 'h-32' : 'h-auto'}`}>{bodyText}</p>
+      {topText && <div className="">{topText}</div>}
+      <h2 className="text-3xl font-glancyr h-16 mb-5 mt-8 max-w-xs">
+        {headline}
+      </h2>
+      <p className={`text-bas ${ctaText && !topText ? "h-32" : "h-auto"}`}>
+        {bodyText}
+      </p>
       {ctaText && (
         <button className="pb-2 border-b mt-5" onClick={onCtaClick}>
           {ctaText}

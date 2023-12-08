@@ -39,7 +39,7 @@ const Outcomes = () => {
           Elevated Compliance, 24/7 Assurance, Swift Outcomes.
         </h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-16 container px-5 md:mx-auto my-16">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-16 container px-5 md:mx-auto">
         {outcomes.map((outcome) => (
           <Card
             key={outcome.id}

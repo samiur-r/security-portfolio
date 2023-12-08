@@ -24,7 +24,7 @@ const partners = [
 
 const Partners = () => {
   return (
-    <section className="mt-20">
+    <section className="mb-20">
       <div className="container md:mx-auto px-5 md:px-0 mb-4 md:mb-16">
         <h6 className="text-xl md:text-3xl font-glancyr">
           powerful collaborations
