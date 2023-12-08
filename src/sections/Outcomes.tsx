@@ -9,6 +9,12 @@ const outcomes = [
       "We empower you with task automation so you can focus on the real deal: your business.",
     ctaText: "Know more",
     backgroundColor: "#313D46",
+    beforeImg: {
+      url: "outcome-hover-1.svg",
+      width: 202,
+      height: 202,
+      isTop: true,
+    },
   },
   {
     id: 2,
@@ -18,6 +24,12 @@ const outcomes = [
       "We eliminate your certification concerns with structured processes and transparency.",
     ctaText: "Know more",
     backgroundColor: "#313D46",
+    beforeImg: {
+      url: "outcome-hover-2.svg",
+      width: 272,
+      height: 226,
+      isTop: true,
+    },
   },
   {
     id: 3,
@@ -27,6 +39,12 @@ const outcomes = [
       "We ensure timely certification: forget the traditional path to compliance; your next chance is just here.",
     ctaText: "Know more",
     backgroundColor: "#313D46",
+    beforeImg: {
+      url: "outcome-hover-3.svg",
+      width: 202,
+      height: 202,
+      isTop: true,
+    },
   },
 ];
 
@@ -48,6 +66,7 @@ const Outcomes = () => {
             bodyText={outcome.bodyText}
             ctaText={outcome.ctaText}
             backgroundColor={outcome.backgroundColor}
+            beforeImg={outcome.beforeImg}
           />
         ))}
       </div>

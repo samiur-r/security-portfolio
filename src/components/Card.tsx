@@ -11,6 +11,7 @@ type CardProps = {
   headline: string;
   bodyText: string;
   ctaText?: string;
+  beforeImg?: { url: string; height: number; width: number; isTop?: boolean };
   onCtaClick?: () => void;
 };
 
@@ -22,38 +23,53 @@ const Card: React.FC<CardProps> = ({
   headline,
   bodyText,
   ctaText,
+  beforeImg,
   onCtaClick,
 }) => {
+  console.log(beforeImg?.height);
   return (
-    <div
-      className={`px-4 py-12 rounded-lg shadow-md ${
-        backgroundColor
-          ? `bg-[${backgroundColor}] rounded-lg`
-          : "bg-transparent border"
-      }`}
-    >
-      {topImageSrc && (
-        <div className="h-12 w-12 relative">
+    <div className={`relative ${beforeImg && "mt-[185px] md:mt-[175px]"}`}>
+      {beforeImg && (
+        <div className={`flex justify-end pr-8 absolute right-5 ${beforeImg.isTop ? 'z-10 -top-[150px]' : '-z-10 -top-[170px]'}`}>
           <Image
-            src={topImageSrc}
-            alt={topImageAlt}
-            layout="fill"
+            src={beforeImg.url}
+            width={beforeImg.width}
+            height={beforeImg.height}
             objectFit="contain"
+            alt=""
           />
         </div>
       )}
-      {topText && <div className="">{topText}</div>}
-      <h2 className="text-3xl font-glancyr h-16 mb-5 mt-8 max-w-xs">
-        {headline}
-      </h2>
-      <p className={`text-bas ${ctaText && !topText ? "h-32" : "h-auto"}`}>
-        {bodyText}
-      </p>
-      {ctaText && (
-        <button className="pb-2 border-b mt-5" onClick={onCtaClick}>
-          {ctaText}
-        </button>
-      )}
+      <div
+        className={`px-4 py-12 rounded-lg shadow-md ${
+          backgroundColor
+            ? `bg-[${backgroundColor}] rounded-lg`
+            : "bg-transparent border"
+        }`}
+      >
+        {topImageSrc && (
+          <div className="h-12 w-12 relative">
+            <Image
+              src={topImageSrc}
+              alt={topImageAlt}
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>
+        )}
+        {topText && <div className="">{topText}</div>}
+        <h2 className="text-3xl font-glancyr h-16 mb-5 mt-8 max-w-xs">
+          {headline}
+        </h2>
+        <p className={`text-base ${ctaText && !topText ? "h-32" : "h-20"}`}>
+          {bodyText}
+        </p>
+        {ctaText && (
+          <button className="pb-2 border-b mt-5" onClick={onCtaClick}>
+            {ctaText}
+          </button>
+        )}
+      </div>
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import Card from "@/components/Card";
+import Image from "next/image";
 
 const frameworks = [
   {
@@ -7,6 +8,7 @@ const frameworks = [
     bodyText:
       "Explore globally recognized standards such as ISO 27001 and SOC2 and get certified to demonstrate cybersecurity excellence.",
     backgroundColor: "#313D46",
+    beforeImg: { url: "1.svg", width: 85, height: 175 },
   },
   {
     id: 2,
@@ -14,6 +16,7 @@ const frameworks = [
     bodyText:
       "Become compliant with regulations like HIPAA, ensuring the highest standards for safeguarding protected information.",
     backgroundColor: "#E8530E",
+    beforeImg: { url: "2.svg", width: 144, height: 179 },
   },
   {
     id: 3,
@@ -21,6 +24,7 @@ const frameworks = [
     bodyText:
       "Craft tailored frameworks that fit your business’ goals and unique requirements. ",
     backgroundColor: "#5F7E9F",
+    beforeImg: { url: "3.svg", width: 146, height: 183 },
   },
 ];
 
@@ -42,6 +46,7 @@ const Frameworks = () => {
             headline={framework.headline}
             bodyText={framework.bodyText}
             backgroundColor={framework.backgroundColor}
+            beforeImg={framework.beforeImg}
           />
         ))}
       </div>
