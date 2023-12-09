@@ -1,5 +1,6 @@
 import Card from "@/components/Card";
 import Image from "next/image";
+import Link from "next/link";
 
 const frameworks = [
   {
@@ -49,6 +50,9 @@ const Frameworks = () => {
             beforeImg={framework.beforeImg}
           />
         ))}
+      </div>
+      <div className="flex justify-center mt-16 md:mt-20 tracking-widest">
+        <Link href="#" className="pb-2 border-b">Explore all our frameworks</Link>
       </div>
     </section>
   );

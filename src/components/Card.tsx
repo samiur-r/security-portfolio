@@ -26,7 +26,6 @@ const Card: React.FC<CardProps> = ({
   beforeImg,
   onCtaClick,
 }) => {
-  console.log(beforeImg?.height);
   return (
     <div className={`relative ${beforeImg && "mt-[185px] md:mt-[175px]"}`}>
       {beforeImg && (

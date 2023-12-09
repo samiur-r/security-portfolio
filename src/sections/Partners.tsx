@@ -1,4 +1,5 @@
 import Card from "@/components/Card";
+import Link from "next/link";
 
 const partners = [
   {
@@ -42,6 +43,11 @@ const Partners = () => {
             bodyText={partner.bodyText}
           />
         ))}
+      </div>
+      <div className="flex justify-center mt-16 md:mt-20 tracking-widest">
+        <Link href="#" className="pb-2 border-b">
+          Explore the strength of partnerships
+        </Link>
       </div>
     </section>
   );
