@@ -22,7 +22,7 @@ const testimonialsData = [
 
 const Testimonials = () => {
   return (
-    <section className="mb-20">
+    <section>
       <SectionHeader
         subHeadline="REAL STORIES, REAL results"
         headline="Discover the Secrets to Client Success"

@@ -91,8 +91,6 @@ const TestimonialSlider: React.FC<TestimonialSliderProps> = ({
                   : testimonials[activeIndex].companyLogoUrl
               }
               alt="Company Logo"
-              // width={80}
-              // height={23}
               objectFit={isHovered ? "cover" : "contain"}
               layout="fill"
             />
@@ -108,7 +106,11 @@ const TestimonialSlider: React.FC<TestimonialSliderProps> = ({
           </button>
           <div className="bg-white flex justify-center items-center w-full">
             <Image
-              src={testimonials[activeIndex].companyLogoUrl}
+              src={
+                isHovered
+                  ? testimonials[activeIndex].imageUrl
+                  : testimonials[activeIndex].companyLogoUrl
+              }
               alt="Company Logo"
               width={80}
               height={23}

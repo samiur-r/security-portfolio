@@ -37,7 +37,7 @@ const partners = [
 
 const Partners = () => {
   return (
-    <section className="mb-20">
+    <section>
       <SectionHeader
         subHeadline="powerful collaborations"
         headline="Meet our Partners"

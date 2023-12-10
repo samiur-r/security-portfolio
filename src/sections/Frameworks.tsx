@@ -38,7 +38,7 @@ const frameworks = [
 
 const Frameworks = () => {
   return (
-    <section className="mb-20">
+    <section>
       <SectionHeader
         subHeadline="your needs, our expertise"
         headline="Our Frameworks, For Your Regional Preference"
