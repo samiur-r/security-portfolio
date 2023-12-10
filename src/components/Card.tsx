@@ -52,14 +52,27 @@ const Card: React.FC<CardProps> = ({
       style={{ ...hoverStyle }}
     >
       {isHovered && hoverImageUrl ? (
-        <Image
-          src={hoverImageUrl.url}
-          alt="Hover Image"
-          width={hoverImageUrl.width}
-          height={hoverImageUrl.height}
-          objectFit="cover"
-          className={`${backgroundColor ? `rounded-lg` : "border"}`}
-        />
+        <>
+          <div className="hidden md:block">
+            <Image
+              src={hoverImageUrl.url}
+              alt="Hover Image"
+              layout="fill"
+              objectFit="cover"
+              className={`${backgroundColor ? `rounded-lg` : "border"}`}
+            />
+          </div>
+          <div className="md:hidden">
+            <Image
+              src={hoverImageUrl.url}
+              alt="Hover Image"
+              width={hoverImageUrl.width}
+              height={hoverImageUrl.height}
+              objectFit="cover"
+              className={`${backgroundColor ? `rounded-lg` : "border"}`}
+            />
+          </div>
+        </>
       ) : (
         <>
           {beforeImg && (

@@ -7,6 +7,7 @@ import ParallaxHero from "@/sections/ParallaxHero";
 import Partners from "@/sections/Partners";
 import Products from "@/sections/Products";
 import Insights from "@/sections/Insights";
+import Testimonials from "@/sections/Testimonials";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
         </div>
       </div>
       <Frameworks />
+      <Testimonials />
       <Partners />
       <Insights />
       <Contact />
