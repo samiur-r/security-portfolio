@@ -8,14 +8,18 @@ const partners = [
     topImageSrc: "/partner-1.svg",
     headline: "AUDITORS",
     bodyText: "Improve your audit practices with SKELDUS.",
-    hoverImageUrl: "/auditors.jpg",
+    hoverImageUrl: { url: "/auditors.jpg", width: "480", height: "378" },
   },
   {
     id: 2,
     topImageSrc: "/partner-2.svg",
     headline: "INDUSTRY ORGANIZATIONS",
     bodyText: "Strengthen compliance practices in your sector.",
-    hoverImageUrl: "/industry organization.jpg",
+    hoverImageUrl: {
+      url: "/industry organization.jpg",
+      width: "480",
+      height: "378",
+    },
   },
   {
     id: 3,
@@ -23,7 +27,11 @@ const partners = [
     headline: "MANAGED SERVICE PROVIDERS",
     bodyText:
       "Discover our leading MSPs partners to provide security and compliance.",
-    hoverImageUrl: "/MSP.jpg",
+    hoverImageUrl: {
+      url: "/MSP.jpg",
+      width: "480",
+      height: "378",
+    },
   },
 ];
 

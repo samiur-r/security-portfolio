@@ -13,7 +13,7 @@ type CardProps = {
   ctaText?: string;
   beforeImg?: { url: string; height: number; width: number; isTop?: boolean };
   beforeImgHoveredUrl?: string;
-  hoverImageUrl?: string;
+  hoverImageUrl?: { url: string; height: number; width: number };
   changeBgColorOnHover?: boolean;
   onCtaClick?: () => void;
 };
@@ -36,7 +36,7 @@ const Card: React.FC<CardProps> = ({
 
   const hoverStyle = {
     backgroundColor:
-      isHovered && changeBgColorOnHover !== false
+      isHovered && !hoverImageUrl && changeBgColorOnHover !== false
         ? "#E8530E"
         : backgroundColor || "transparent",
     transition: "background-color 300ms",
@@ -53,9 +53,10 @@ const Card: React.FC<CardProps> = ({
     >
       {isHovered && hoverImageUrl ? (
         <Image
-          src={hoverImageUrl}
+          src={hoverImageUrl.url}
           alt="Hover Image"
-          layout="fill"
+          width={hoverImageUrl.width}
+          height={hoverImageUrl.height}
           objectFit="cover"
         />
       ) : (

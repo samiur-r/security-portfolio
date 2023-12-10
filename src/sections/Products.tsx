@@ -10,7 +10,7 @@ const products = [
       "Whether it’s standards or regulations, let us help you identify which path forward is best for you.  No more uncertainty – just structured steps to achieve and maintain compliance with ease with our Task Management.",
     ctaText: "Know more",
     backgroundColor: "#313D46",
-    hoverImageUrl: "/compliance.jpg",
+    hoverImageUrl: { url: "/compliance.jpg", width: "480", height: "600" },
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const products = [
       "With compliance comes security, and with security comes ever-evolving risks. But staying secure is not a one-time deal to purchase and forget about. This is why we help you automate monitoring, and grant Controls Access to protect you from cyber threats.",
     ctaText: "Know more",
     backgroundColor: "#E8530E",
-    hoverImageUrl: "/security.jpg",
+    hoverImageUrl: { url: "/security.jpg", width: "480", height: "600" },
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const products = [
       "A business’s success is only as good as the trust it’s built on. Prove to your customers that you value their trust by showcasing your security posture through our Trust Center and providing top tier protection for their data.",
     ctaText: "Know more",
     backgroundColor: "#5F7E9F",
-    hoverImageUrl: "/trust.jpg",
+    hoverImageUrl: { url: "/trust.jpg", width: "480", height: "600" },
   },
 ];
 
