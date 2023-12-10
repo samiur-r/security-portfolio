@@ -1,4 +1,5 @@
 import InsightCard from "@/components/InsightCard";
+import SectionHeader from "@/components/SectionHeader";
 
 const insights = [
   {
@@ -26,14 +27,10 @@ const insights = [
 const Insights = () => {
   return (
     <section className="mb-16">
-      <div className="container md:mx-auto px-5 md:px-0 mb-4 md:mb-16">
-        <h6 className="text-xl md:text-3xl font-glancyr">
-          Explore Our Insights
-        </h6>
-        <h2 className="font-glancyr font-bold text-3xl md:text-5xl max-w-2xl mt-5">
-          Our Insightful Knowledge Base
-        </h2>
-      </div>
+      <SectionHeader
+        subHeadline="Explore Our Insights"
+        headline="Our Insightful Knowledge Base"
+      />
       <div className="grid grid-cols-1 md:grid-cols-2 px-5">
         {insights.map((insight) => (
           <InsightCard

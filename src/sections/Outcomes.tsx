@@ -1,4 +1,5 @@
 import Card from "@/components/Card";
+import SectionHeader from "@/components/SectionHeader";
 
 const outcomes = [
   {
@@ -10,11 +11,12 @@ const outcomes = [
     ctaText: "Know more",
     backgroundColor: "#313D46",
     beforeImg: {
-      url: "outcome-hover-1.svg",
+      url: "outcome-1.svg",
       width: 202,
       height: 202,
       isTop: true,
     },
+    beforeImgHoveredUrl: "outcome-hover-1.svg",
   },
   {
     id: 2,
@@ -25,11 +27,12 @@ const outcomes = [
     ctaText: "Know more",
     backgroundColor: "#313D46",
     beforeImg: {
-      url: "outcome-hover-2.svg",
+      url: "outcome-2.svg",
       width: 272,
       height: 226,
       isTop: true,
     },
+    beforeImgHoveredUrl: "outcome-hover-2.svg",
   },
   {
     id: 3,
@@ -40,23 +43,22 @@ const outcomes = [
     ctaText: "Know more",
     backgroundColor: "#313D46",
     beforeImg: {
-      url: "outcome-hover-3.svg",
+      url: "outcome-3.svg",
       width: 202,
       height: 202,
       isTop: true,
     },
+    beforeImgHoveredUrl: "outcome-hover-3.svg",
   },
 ];
 
 const Outcomes = () => {
   return (
     <section>
-      <div className="container md:mx-auto px-5 md:px-0 mb-4 md:mb-16">
-        <h6 className="text-xl md:text-3xl font-glancyr">wHY SKELDUS?</h6>
-        <h2 className="font-glancyr font-bold text-3xl md:text-5xl max-w-2xl mt-5">
-          Elevated Compliance, 24/7 Assurance, Swift Outcomes.
-        </h2>
-      </div>
+      <SectionHeader
+        subHeadline="wHY SKELDUS?"
+        headline="Elevated Compliance, 24/7 Assurance, Swift Outcomes."
+      />
       <div className="grid grid-cols-1 md:grid-cols-3 gap-16 container px-5 md:mx-auto">
         {outcomes.map((outcome) => (
           <Card
@@ -67,6 +69,7 @@ const Outcomes = () => {
             ctaText={outcome.ctaText}
             backgroundColor={outcome.backgroundColor}
             beforeImg={outcome.beforeImg}
+            beforeImgHoveredUrl={outcome.beforeImgHoveredUrl}
           />
         ))}
       </div>

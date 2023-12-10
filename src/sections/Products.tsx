@@ -1,4 +1,5 @@
 import Card from "@/components/Card";
+import SectionHeader from "@/components/SectionHeader";
 
 const products = [
   {
@@ -9,6 +10,7 @@ const products = [
       "Whether it’s standards or regulations, let us help you identify which path forward is best for you.  No more uncertainty – just structured steps to achieve and maintain compliance with ease with our Task Management.",
     ctaText: "Know more",
     backgroundColor: "#313D46",
+    hoverImageUrl: "/compliance.jpg",
   },
   {
     id: 2,
@@ -18,6 +20,7 @@ const products = [
       "With compliance comes security, and with security comes ever-evolving risks. But staying secure is not a one-time deal to purchase and forget about. This is why we help you automate monitoring, and grant Controls Access to protect you from cyber threats.",
     ctaText: "Know more",
     backgroundColor: "#E8530E",
+    hoverImageUrl: "/security.jpg",
   },
   {
     id: 3,
@@ -27,18 +30,17 @@ const products = [
       "A business’s success is only as good as the trust it’s built on. Prove to your customers that you value their trust by showcasing your security posture through our Trust Center and providing top tier protection for their data.",
     ctaText: "Know more",
     backgroundColor: "#5F7E9F",
+    hoverImageUrl: "/trust.jpg",
   },
 ];
 
 const Products = () => {
   return (
     <section>
-      <div className="container md:mx-auto px-5 md:px-0 mb-4 md:mb-16">
-        <h6 className="text-xl md:text-3xl font-glancyr">HOW WE GET IT DONE</h6>
-        <h2 className="font-glancyr font-bold text-3xl md:text-5xl max-w-2xl mt-5">
-          Your road to total confidence with SKELDUS
-        </h2>
-      </div>
+      <SectionHeader
+        subHeadline="HOW WE GET IT DONE"
+        headline="Your road to total confidence with SKELDUS"
+      />
       <div className="grid grid-cols-1 md:grid-cols-3 px-5">
         {products.map((product) => (
           <Card
@@ -48,6 +50,7 @@ const Products = () => {
             bodyText={product.bodyText}
             ctaText={product.ctaText}
             backgroundColor={product.backgroundColor}
+            hoverImageUrl={product.hoverImageUrl}
           />
         ))}
       </div>

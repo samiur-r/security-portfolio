@@ -1,5 +1,5 @@
-<svg width="85" height="175" viewBox="0 0 85 175" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="path-1-outside-1_46_9929" maskUnits="userSpaceOnUse" x="-1" y="-1" width="87" height="177" fill="black">
+<svg width="85" height="175" viewBox="0 0 85 175" fill="white" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-outside-1_46_9929" maskUnits="userSpaceOnUse" x="-1" y="-1" width="87" height="177" fill="white">
 <rect fill="white" x="-1" y="-1" width="87" height="177"/>
 <path d="M37.5 175V42.5H3.53903e-07V-1.19209e-05H85V175H37.5Z"/>
 </mask>

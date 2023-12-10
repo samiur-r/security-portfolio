@@ -1,4 +1,5 @@
 import Card from "@/components/Card";
+import SectionHeader from "@/components/SectionHeader";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,6 +11,8 @@ const frameworks = [
       "Explore globally recognized standards such as ISO 27001 and SOC2 and get certified to demonstrate cybersecurity excellence.",
     backgroundColor: "#313D46",
     beforeImg: { url: "1.svg", width: 85, height: 175 },
+    beforeImgHoveredUrl: "/1-hover.png",
+    changeBgColorOnHover: false,
   },
   {
     id: 2,
@@ -18,6 +21,8 @@ const frameworks = [
       "Become compliant with regulations like HIPAA, ensuring the highest standards for safeguarding protected information.",
     backgroundColor: "#E8530E",
     beforeImg: { url: "2.svg", width: 144, height: 179 },
+    beforeImgHoveredUrl: "/2-hover.png",
+    changeBgColorOnHover: false,
   },
   {
     id: 3,
@@ -26,20 +31,18 @@ const frameworks = [
       "Craft tailored frameworks that fit your business’ goals and unique requirements. ",
     backgroundColor: "#5F7E9F",
     beforeImg: { url: "3.svg", width: 146, height: 183 },
+    beforeImgHoveredUrl: "/3-hover.png",
+    changeBgColorOnHover: false,
   },
 ];
 
 const Frameworks = () => {
   return (
     <section className="mb-20">
-      <div className="container md:mx-auto px-5 md:px-0 mb-4 md:mb-16">
-        <h6 className="text-xl md:text-3xl font-glancyr">
-          your needs, our expertise
-        </h6>
-        <h2 className="font-glancyr font-bold text-3xl md:text-5xl max-w-2xl mt-5">
-          Our Frameworks, For Your Regional Preference
-        </h2>
-      </div>
+      <SectionHeader
+        subHeadline="your needs, our expertise"
+        headline="Our Frameworks, For Your Regional Preference"
+      />
       <div className="grid grid-cols-1 md:grid-cols-3 px-5">
         {frameworks.map((framework) => (
           <Card
@@ -48,11 +51,15 @@ const Frameworks = () => {
             bodyText={framework.bodyText}
             backgroundColor={framework.backgroundColor}
             beforeImg={framework.beforeImg}
+            beforeImgHoveredUrl={framework.beforeImgHoveredUrl}
+            changeBgColorOnHover={framework.changeBgColorOnHover}
           />
         ))}
       </div>
       <div className="flex justify-center mt-16 md:mt-20 tracking-widest">
-        <Link href="#" className="pb-2 border-b">Explore all our frameworks</Link>
+        <Link href="#" className="pb-2 border-b">
+          Explore all our frameworks
+        </Link>
       </div>
     </section>
   );
