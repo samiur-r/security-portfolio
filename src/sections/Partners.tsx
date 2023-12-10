@@ -8,7 +8,7 @@ const partners = [
     topImageSrc: "/partner-1.svg",
     headline: "AUDITORS",
     bodyText: "Improve your audit practices with SKELDUS.",
-    hoverImageUrl: { url: "/auditors.jpg", width: "480", height: "378" },
+    hoverImageUrl: { url: "/auditors.jpg", width: 480, height: 378 },
   },
   {
     id: 2,
@@ -17,8 +17,8 @@ const partners = [
     bodyText: "Strengthen compliance practices in your sector.",
     hoverImageUrl: {
       url: "/industry organization.jpg",
-      width: "480",
-      height: "378",
+      width: 480,
+      height: 378,
     },
   },
   {
@@ -29,8 +29,8 @@ const partners = [
       "Discover our leading MSPs partners to provide security and compliance.",
     hoverImageUrl: {
       url: "/MSP.jpg",
-      width: "480",
-      height: "378",
+      width: 480,
+      height: 378,
     },
   },
 ];

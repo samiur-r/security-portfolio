@@ -44,9 +44,9 @@ const Card: React.FC<CardProps> = ({
 
   return (
     <div
-      className={`relative ${beforeImg && "mt-[185px] md:mt-[175px]"} ${
-        backgroundColor ? `rounded-lg` : "border"
-      }`}
+      className={`relative ${
+        beforeImg ? "mt-[185px] md:mt-[175px]" : "overflow-hidden "
+      } ${backgroundColor ? `rounded-lg` : "border"}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       style={{ ...hoverStyle }}
@@ -58,6 +58,7 @@ const Card: React.FC<CardProps> = ({
           width={hoverImageUrl.width}
           height={hoverImageUrl.height}
           objectFit="cover"
+          className={`${backgroundColor ? `rounded-lg` : "border"}`}
         />
       ) : (
         <>
