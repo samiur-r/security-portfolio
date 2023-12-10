@@ -20,6 +20,7 @@ const TestimonialSlider: React.FC<TestimonialSliderProps> = ({
   testimonials,
 }) => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
 
   const nextTestimonial = () => {
     setActiveIndex((current) =>
@@ -35,10 +36,22 @@ const TestimonialSlider: React.FC<TestimonialSliderProps> = ({
 
   return (
     <div className="container mx-auto p-4 md:p-0 grid grid-cols-1 md:grid-cols-12 gap-4 items-center rounded-lg overflow-hidden">
-      <div className="col-span-12 md:col-span-11 flex flex-col md:flex-row pt-5 md:pt-0 bg-[#E5E7E8]">
-        <div className="relative min-h-[345px] min-w-[244px] md:min-h-[345px] md:min-w-[244px]">
+      <div
+        className="col-span-12 md:col-span-11 flex flex-col md:flex-row pt-5 md:pt-0 bg-[#E5E7E8]"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        <div
+          className={`relative min-h-[345px] min-w-[244px] md:min-h-[345px] md:min-w-[244px] ${
+            isHovered && "mx-5"
+          }`}
+        >
           <Image
-            src={testimonials[activeIndex].imageUrl}
+            src={
+              isHovered
+                ? testimonials[activeIndex].companyLogoUrl
+                : testimonials[activeIndex].imageUrl
+            }
             alt={testimonials[activeIndex].name}
             layout="fill"
           />
@@ -70,12 +83,18 @@ const TestimonialSlider: React.FC<TestimonialSliderProps> = ({
           >
             <Image src="Arrow_right.svg" height={50} width={50} alt="" />
           </button>
-          <div className="bg-white flex justify-center items-center w-full h-[100px]">
+          <div className="bg-white flex justify-center items-center w-full h-[100px] relative">
             <Image
-              src={testimonials[activeIndex].companyLogoUrl}
+              src={
+                isHovered
+                  ? testimonials[activeIndex].imageUrl
+                  : testimonials[activeIndex].companyLogoUrl
+              }
               alt="Company Logo"
-              width={80}
-              height={23}
+              // width={80}
+              // height={23}
+              objectFit={isHovered ? "cover" : "contain"}
+              layout="fill"
             />
           </div>
         </div>
