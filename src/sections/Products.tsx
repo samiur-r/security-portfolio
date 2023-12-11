@@ -37,10 +37,12 @@ const products = [
 const Products = () => {
   return (
     <section>
-      <SectionHeader
-        subHeadline="HOW WE GET IT DONE"
-        headline="Your road to total confidence with SKELDUS"
-      />
+      <div className="pt-20 pb-10 md:pb-0">
+        <SectionHeader
+          subHeadline="HOW WE GET IT DONE"
+          headline="Your road to total confidence with SKELDUS"
+        />
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-3 px-5">
         {products.map((product) => (
           <Card
