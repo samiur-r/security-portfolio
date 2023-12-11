@@ -109,7 +109,7 @@ const Card: React.FC<CardProps> = ({
             <h2 className="text-3xl font-glancyr h-16 mb-5 mt-8 max-w-xs">
               {headline}
             </h2>
-            <p className={`text-base ${ctaText && !topText ? "h-32" : "h-20"}`}>
+            <p className={`text-base ${ctaText && !topText ? "h-40" : "h-20"}`}>
               {bodyText}
             </p>
             {ctaText && (

@@ -18,7 +18,7 @@ export default function Home() {
         <Outcomes />
         <div className="absolute right-0 top-0 -z-10 opacity-50">
           <Image
-            src="/bg-design.svg"
+            src="/bg-design.png"
             width={997}
             height={1347}
             objectFit="cover"
@@ -32,7 +32,7 @@ export default function Home() {
             src="/bg-design-2.png"
             width={939}
             height={1791}
-            objectFit="cover"
+            objectFit="contain"
             alt="contact"
           />
         </div>
