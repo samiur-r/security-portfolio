@@ -31,16 +31,3 @@ body {
   background: linear-gradient(to right, black, #313d46);
 }
 
-.svg-mask {
-  @apply bg-orange-500; /* Default color */
-  mask-size: contain;
-  mask-repeat: no-repeat;
-  mask-position: center;
-  -webkit-mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-}
-
-.svg-mask:hover {
-  @apply bg-white; /* Color on hover */
-}

@@ -8,12 +8,10 @@ import Partners from "@/sections/Partners";
 import Products from "@/sections/Products";
 import Insights from "@/sections/Insights";
 import Testimonials from "@/sections/Testimonials";
-import Menu from "@/components/Menu";
 
 export default function Home() {
   return (
     <section className="flex flex-col">
-      {/* <Menu /> */}
       <ParallaxHero />
       <div className="relative flex flex-col gap-20 mb-20 mt-20 md:mt-0">
         <Products />

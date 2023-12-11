@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import Image from "next/image";
 
 const menuItems = [
@@ -10,24 +10,27 @@ const menuItems = [
     name: "FRAMEWORKS",
     subItems: [{ name: "OUR STORY", link: "/our-story" }],
   },
+  {
+    name: "RESOURCES",
+    subItems: [{ name: "OUR STORY", link: "/our-story" }],
+  },
   { name: "ABOUT US", subItems: [] },
 ];
 
-export default function Menu() {
-  const [menuOpen, setMenuOpen] = useState(true);
-  const [activeMenu, setActiveMenu] = useState(null);
+type MenuProps = {
+  isOpen: boolean;
+  isMobile: boolean;
+  handleSetShowMenu: Dispatch<SetStateAction<boolean>>;
+};
 
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    setIsMobile(window.innerWidth < 768);
-  }, []);
+const Menu: React.FC<MenuProps> = ({ isOpen, isMobile, handleSetShowMenu }) => {
+  const [activeMenu, setActiveMenu] = useState<any>(null);
 
   return (
     <div
-      className={`fixed inset-0 z-50 bg-[#313D46] ${
-        menuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
-      } transition-opacity duration-300`}
+      className={`fixed inset-0 z-50 bg-[#313D46] transition-opacity duration-500 ${
+        isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+      }`}
       style={{ backgroundImage: `url(/menu-bg.svg)`, backgroundSize: "cover" }}
     >
       <div className="container flex flex-col mx-auto gap-5">
@@ -42,42 +45,50 @@ export default function Menu() {
                 className="cursor-pointer"
               />
             </div>
-            <div className="menu-icon">
-              <button onClick={() => setMenuOpen(!menuOpen)}>
-                <Image
-                  src="/close-menu-btn.svg"
-                  width={isMobile ? 40 : 60}
-                  height={isMobile ? 40 : 60}
-                  alt="bar_menu"
-                  className="cursor-pointer"
-                />
-              </button>
-            </div>
+            <button onClick={() => handleSetShowMenu(false)}>
+              <Image
+                src="/close-menu-btn.svg"
+                width={isMobile ? 40 : 60}
+                height={isMobile ? 40 : 60}
+                alt="bar_menu"
+                className="cursor-pointer"
+              />
+            </button>
           </div>
         </header>
 
-        <div className="flex gap-5">
-          {/* Left box with menu items */}
-          <div className="flex-1 h-full overflow-auto p-5 border-r border-[#E5E7E8]">
-            <nav>
+        <div className="flex gap-2">
+          <div className="h-full p-5">
+            <nav className="border-r border-[#E5E7E8] pr-2 md:pr-5">
               <ul>
                 {menuItems.map((item) => (
-                  <li key={item.name} className="mb-4">
+                  <li key={item.name} className="mb-6">
                     <button
-                      className="text-white hover:underline"
+                      className="flex w-full gap-2 items-center font-glancyr text-lg md:text-4xl hover:underline md:tracking-widest"
                       onClick={() => setActiveMenu(item.name)}
                     >
                       {item.name}
-                      {item.subItems && " ->"}
+                      {item.subItems.length > 0 && (
+                        <Image
+                          src="Arrow_right_light.svg"
+                          alt=""
+                          width={isMobile ? 20 : 50}
+                          height={isMobile ? 20 : 50}
+                        />
+                      )}
                     </button>
                   </li>
                 ))}
               </ul>
             </nav>
+            <div className="flex gap-5 items-center mt-10">
+              <Image src="instagram.svg" width={40} height={40} alt="" />
+              <Image src="linkedin.svg" width={40} height={40} alt="" />
+              <Image src="youtube.svg" width={40} height={40} alt="" />
+            </div>
           </div>
 
-          {/* Right box with sub-menu items */}
-          <div className="flex-1 h-full overflow-auto p-5">
+          <div className="h-full overflow-auto p-2">
             <nav>
               <ul>
                 {menuItems
@@ -86,7 +97,7 @@ export default function Menu() {
                     <li key={subItem.name} className="mb-4">
                       <a
                         href={subItem.link}
-                        className="text-white hover:underline"
+                        className="font-glancyr text-lg md:text-4xl tracking-widest"
                       >
                         {subItem.name}
                       </a>
@@ -99,4 +110,5 @@ export default function Menu() {
       </div>
     </div>
   );
-}
+};
+export default Menu;
