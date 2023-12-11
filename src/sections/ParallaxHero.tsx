@@ -135,7 +135,7 @@ const ParallaxHero = () => {
             }}
           >
             <Image
-              src="/hero_bg.svg"
+              src="/hero_bg.png"
               alt="Background"
               layout="fill"
               objectFit="cover"

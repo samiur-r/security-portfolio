@@ -7,7 +7,7 @@ const Footer = () => {
       <Image src="/footer-bg-logo.svg" width={675} height={675} alt="" className="absolute top-0" />
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-start relative z-20">
         <div className="mb-6 md:mb-0 -mt-1.5 mx-auto">
-          <Image src="/logo_footer.svg" width={100} height={100} alt="Logo" />
+          <Image src="/logo_2_white.svg" width={100} height={100} alt="Logo" />
           <div className="flex mt-4 gap-4 items-start">
             <Image
               src="/instagram.svg"

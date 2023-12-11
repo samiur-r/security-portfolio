@@ -4,7 +4,7 @@ import SectionHeader from "@/components/SectionHeader";
 const insights = [
   {
     id: 1,
-    imageUrl: "/blog.svg",
+    imageUrl: "/blog.png",
     date: "08 nOV. 2023",
     author: "by jane doe",
     headline: "Leaving Authentication Credentials in Public Code",
@@ -14,7 +14,7 @@ const insights = [
   },
   {
     id: 2,
-    imageUrl: "/white-paper.svg",
+    imageUrl: "/white-paper.png",
     date: "08 nOV. 2023",
     author: "by nicolas smith",
     headline: "US Harbors Prolific Malicious Link Shortening Service",
