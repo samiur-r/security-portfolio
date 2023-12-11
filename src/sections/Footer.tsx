@@ -1,12 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const Footer = () => {
+const Footer2 = () => {
   return (
     <footer className="bg-[#5F7E9F] text-white pt-8 px-2 lg:pt-16 relative overflow-hidden">
-      <Image src="/footer-bg-logo.svg" width={675} height={675} alt="" className="absolute top-0" />
-      <div className="container mx-auto flex flex-col lg:flex-row justify-between items-start relative z-20">
-        <div className="mb-6 lg:mb-0 -mt-1.5 mx-auto">
+      <Image
+        src="/footer-bg-logo.svg"
+        width={675}
+        height={675}
+        alt=""
+        className="absolute top-0"
+      />
+      <div className="container mx-auto flex flex-col lg:flex-row gap-5 md:gap-0 items-center md:items-start relative">
+        <div className="flex-1 flex items-center flex-col mb-8 lg:mb-0">
           <Image src="/logo_2_white.svg" width={100} height={100} alt="Logo" />
           <div className="flex mt-4 gap-4 items-start">
             <Image
@@ -32,8 +38,8 @@ const Footer = () => {
             />
           </div>
         </div>
-        <div className="flex flex-1 justify-around flex-wrap leading-7 tracking-wider">
-          <div className="footer-column -ml-8 lg:ml-0">
+        <div className="flex-1 flex justify-center">
+          <div className="text-center lg:text-start">
             <h4 className="font-glancyr font-bold mb-2">QUICK LINKS</h4>
             <ul>
               <li>
@@ -44,7 +50,9 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="footer-column -ml-12 lg:ml-0">
+        </div>
+        <div className="flex-1 flex justify-center">
+          <div className="text-center lg:text-start">
             <h4 className="font-glancyr font-bold mb-2">ABOUT US</h4>
             <ul>
               <li>
@@ -61,7 +69,9 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="footer-column mt-3 lg:mt-0">
+        </div>
+        <div className="flex-1 flex justify-center">
+          <div className="text-center lg:text-start">
             <h4 className="font-glancyr font-bold mb-2">
               CLIENTS & PARTNERSHIP
             </h4>
@@ -74,7 +84,9 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="footer-column mt-3 lg:mt-0">
+        </div>
+        <div className="flex-1 flex justify-center">
+          <div className="text-center lg:text-start">
             <h4 className="font-glancyr font-bold mb-2">RESSOURCES</h4>
             <ul>
               <li>
@@ -103,4 +115,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer2;
