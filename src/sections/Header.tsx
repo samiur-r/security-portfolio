@@ -36,8 +36,7 @@ const Header: React.FC = () => {
         } transition-all duration-300 ease-in-out z-20`}
       >
         <div className="flex justify-between items-center h-full container mx-auto">
-          <div className="logo">
-            {" "}
+          <div className="flex-1">
             {isScrolled ? (
               <Image
                 src="/logo_2.svg"
