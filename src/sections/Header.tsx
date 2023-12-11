@@ -10,7 +10,7 @@ const Header: React.FC = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   useEffect(() => {
-    setIsMobile(window.innerWidth < 768);
+    setIsMobile(window.innerWidth < 820);
 
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);

@@ -43,7 +43,7 @@ const Frameworks = () => {
         subHeadline="your needs, our expertise"
         headline="Our Frameworks, For Your Regional Preference"
       />
-      <div className="grid grid-cols-1 md:grid-cols-3 px-5">
+      <div className="grid grid-cols-1 lg:grid-cols-3 px-5">
         {frameworks.map((framework) => (
           <Card
             key={framework.id}
@@ -56,7 +56,7 @@ const Frameworks = () => {
           />
         ))}
       </div>
-      <div className="flex justify-center mt-16 md:mt-20 tracking-widest">
+      <div className="flex justify-center mt-16 lg:mt-20 tracking-widest">
         <Link href="#" className="pb-2 border-b">
           Explore all our frameworks
         </Link>

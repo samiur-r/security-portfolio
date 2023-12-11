@@ -31,7 +31,7 @@ const Insights = () => {
         subHeadline="Explore Our Insights"
         headline="Our Insightful Knowledge Base"
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 px-5 gap-5 md:gap-0">
+      <div className="grid grid-cols-1 lg:grid-cols-2 px-5 gap-5 lg:gap-0">
         {insights.map((insight) => (
           <InsightCard
             key={insight.id}

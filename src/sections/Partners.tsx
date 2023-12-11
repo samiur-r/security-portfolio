@@ -42,7 +42,7 @@ const Partners = () => {
         subHeadline="powerful collaborations"
         headline="Meet our Partners"
       />
-      <div className="grid grid-cols-1 md:grid-cols-3 px-5">
+      <div className="grid grid-cols-1 lg:grid-cols-3 px-5">
         {partners.map((partner) => (
           <Card
             key={partner.id}
@@ -53,7 +53,7 @@ const Partners = () => {
           />
         ))}
       </div>
-      <div className="flex justify-center mt-16 md:mt-20 tracking-widest">
+      <div className="flex justify-center mt-16 lg:mt-20 tracking-widest">
         <Link href="#" className="pb-2 border-b">
           Explore the strength of partnerships
         </Link>

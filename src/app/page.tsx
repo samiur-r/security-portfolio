@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <section className="flex flex-col">
       <ParallaxHero />
-      <div className="relative flex flex-col gap-20 md:mb-20">
+      <div className="relative flex flex-col gap-20 lg:mb-20">
         <Products />
         <Outcomes />
         <div className="absolute right-0 top-0 -z-10 opacity-50">
@@ -26,7 +26,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="relative flex flex-col gap-20 mb-20 mt-20 md:mt-0">
+      <div className="relative flex flex-col gap-20 mb-20 mt-20 lg:mt-0">
         <div className="absolute right-0 top-0 -z-10">
           <Image
             src="/bg-design-2.png"

@@ -35,14 +35,14 @@ const TestimonialSlider: React.FC<TestimonialSliderProps> = ({
   };
 
   return (
-    <div className="container mx-auto p-4 md:p-0 grid grid-cols-1 md:grid-cols-12 gap-4 items-center rounded-lg overflow-hidden">
+    <div className="container mx-auto p-4 lg:p-0 grid grid-cols-1 lg:grid-cols-12 gap-4 items-center rounded-lg overflow-hidden">
       <div
-        className="col-span-12 md:col-span-11 flex flex-col md:flex-row pt-5 md:pt-0 bg-[#E5E7E8]"
+        className="col-span-12 lg:col-span-11 flex flex-col lg:flex-row pt-5 lg:pt-0 bg-[#E5E7E8]"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
         <div
-          className={`relative min-h-[345px] min-w-[244px] md:min-h-[345px] md:min-w-[244px] ${
+          className={`relative min-h-[345px] min-w-[244px] lg:min-h-[345px] lg:min-w-[244px] ${
             isHovered && "mx-5"
           }`}
         >
@@ -57,18 +57,18 @@ const TestimonialSlider: React.FC<TestimonialSliderProps> = ({
           />
         </div>
         <div className="flex flex-col justify-center gap-5 p-10 text-[#313D46]">
-          <p className="text-xl md:text-3xl text-center md:text-start">
+          <p className="text-xl lg:text-3xl text-center lg:text-start">
             {testimonials[activeIndex].text}
           </p>
-          <div className="flex flex-col md:flex-row items-center md:items-start text-center md:text-start gap-2">
+          <div className="flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-start gap-2">
             <p> {testimonials[activeIndex].name},</p>
             <p>{testimonials[activeIndex].title}</p>
           </div>
         </div>
       </div>
 
-      <div className="col-span-12 md:col-span-1 h-full flex flex-col md:items-start items-center bg-[#E5E7E8]">
-        <div className="hidden md:flex md:flex-col md:items-center justify-between h-full w-full pt-4">
+      <div className="col-span-12 lg:col-span-1 h-full flex flex-col lg:items-start items-center bg-[#E5E7E8]">
+        <div className="hidden lg:flex lg:flex-col lg:items-center justify-between h-full w-full pt-4">
           <button
             onClick={prevTestimonial}
             className="text-black disabled:text-gray-400"
@@ -96,7 +96,7 @@ const TestimonialSlider: React.FC<TestimonialSliderProps> = ({
             />
           </div>
         </div>
-        <div className="flex md:hidden justify-between w-full">
+        <div className="flex lg:hidden justify-between w-full">
           <button
             onClick={prevTestimonial}
             className="text-black disabled:text-gray-400"

@@ -20,7 +20,7 @@ const InsightCard: React.FC<InsightCardProps> = ({
 }) => {
   return (
     <div
-      className="bg-cover bg-center w-full h-full md:h-[430px] flex items-center justify-center px-2 py-10"
+      className="bg-cover bg-center w-full h-full lg:h-[430px] flex items-center justify-center px-2 py-10"
       style={{ backgroundImage: `url(${imageUrl})` }}
     >
       <div className="flex flex-col justify-center items-center max-w-xl">
@@ -35,7 +35,7 @@ const InsightCard: React.FC<InsightCardProps> = ({
           </div>
         </div>
 
-        <h2 className="text-xl md:text-3xl font-glancyr w-full">{headline}</h2>
+        <h2 className="text-xl lg:text-3xl font-glancyr w-full">{headline}</h2>
         <p className="mt-2 line-clamp-2 w-full mb-8">{bodyText}</p>
 
         <div className="w-full">

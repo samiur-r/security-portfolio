@@ -59,12 +59,12 @@ const Menu: React.FC<MenuProps> = ({ isOpen, isMobile, handleSetShowMenu }) => {
 
         <div className="flex gap-2">
           <div className="h-full p-5">
-            <nav className="border-r border-[#E5E7E8] pr-2 md:pr-5">
+            <nav className="border-r border-[#E5E7E8] pr-2 lg:pr-5">
               <ul>
                 {menuItems.map((item) => (
                   <li key={item.name} className="mb-6">
                     <button
-                      className="flex w-full gap-2 items-center font-glancyr text-lg md:text-4xl hover:underline md:tracking-widest"
+                      className="flex w-full gap-2 items-center font-glancyr text-lg lg:text-4xl hover:underline lg:tracking-widest"
                       onClick={() => setActiveMenu(item.name)}
                     >
                       {item.name}
@@ -97,7 +97,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen, isMobile, handleSetShowMenu }) => {
                     <li key={subItem.name} className="mb-4">
                       <a
                         href={subItem.link}
-                        className="font-glancyr text-lg md:text-4xl tracking-widest"
+                        className="font-glancyr text-lg lg:text-4xl tracking-widest"
                       >
                         {subItem.name}
                       </a>
