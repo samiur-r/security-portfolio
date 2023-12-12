@@ -56,7 +56,10 @@ const ParallaxHero = () => {
 
   return (
     <section>
-      <div className="relative" style={{ height: isMobile ? "100vh" : "250vh" }}>
+      <div
+        className="relative"
+        style={{ height: isMobile ? "100vh" : "250vh" }}
+      >
         <div className="h-screen sticky top-0 flex justify-center items-center">
           <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-start container mx-auto z-30 px-5 lg:px-auto">
             {opacity !== 0 && (
@@ -138,8 +141,8 @@ const ParallaxHero = () => {
               src="/hero_bg.png"
               alt="Background"
               layout="fill"
-              objectFit="cover"
               id="backgroundImage"
+              className="object-cover"
             />
           </div>
         </div>

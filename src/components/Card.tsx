@@ -59,8 +59,9 @@ const Card: React.FC<CardProps> = ({
               src={hoverImageUrl.url}
               alt="Hover Image"
               layout="fill"
-              objectFit="cover"
-              className={`${backgroundColor ? `rounded-lg` : "border"}`}
+              className={`object-cover ${
+                backgroundColor ? `rounded-lg` : "border"
+              }`}
             />
           </div>
           <div className="lg:hidden">
@@ -69,8 +70,9 @@ const Card: React.FC<CardProps> = ({
               alt="Hover Image"
               width={hoverImageUrl.width}
               height={hoverImageUrl.height}
-              objectFit="cover"
-              className={`${backgroundColor ? `rounded-lg` : "border"}`}
+              className={`object-cover ${
+                backgroundColor ? `rounded-lg` : "border"
+              }`}
             />
           </div>
         </>
@@ -90,8 +92,8 @@ const Card: React.FC<CardProps> = ({
                 }
                 width={beforeImg.width}
                 height={beforeImg.height}
-                objectFit="contain"
                 alt=""
+                className="object-contain"
               />
             </div>
           )}
@@ -102,7 +104,7 @@ const Card: React.FC<CardProps> = ({
                   src={topImageSrc}
                   alt={topImageAlt}
                   layout="fill"
-                  objectFit="contain"
+                  className="object-contain"
                 />
               </div>
             )}

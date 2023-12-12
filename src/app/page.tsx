@@ -1,13 +1,12 @@
 import Image from "next/image";
 
-import Contact from "@/sections/Contact";
-import Frameworks from "@/sections/Frameworks";
-import Outcomes from "@/sections/Outcomes";
-import ParallaxHero from "@/sections/ParallaxHero";
-import Partners from "@/sections/Partners";
-import Products from "@/sections/Products";
-import Insights from "@/sections/Insights";
-import Testimonials from "@/sections/Testimonials";
+import Frameworks from "@/sections/home/Frameworks";
+import Outcomes from "@/sections/home/Outcomes";
+import ParallaxHero from "@/sections/home/ParallaxHero";
+import Partners from "@/sections/home/Partners";
+import Products from "@/sections/home/Products";
+import Insights from "@/sections/home/Insights";
+import Testimonials from "@/sections/home/Testimonials";
 
 export default function Home() {
   return (
@@ -21,8 +20,8 @@ export default function Home() {
             src="/bg-design.png"
             width={997}
             height={1347}
-            objectFit="cover"
             alt="contact"
+            className="object-cover"
           />
         </div>
       </div>
@@ -32,8 +31,8 @@ export default function Home() {
             src="/bg-design-2.png"
             width={939}
             height={1791}
-            objectFit="contain"
             alt="contact"
+            className="object-contain"
           />
         </div>
         <Frameworks />
@@ -41,7 +40,6 @@ export default function Home() {
         <Partners />
       </div>
       <Insights />
-      <Contact />
     </section>
   );
 }

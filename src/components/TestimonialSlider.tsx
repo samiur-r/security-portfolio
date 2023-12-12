@@ -91,8 +91,8 @@ const TestimonialSlider: React.FC<TestimonialSliderProps> = ({
                   : testimonials[activeIndex].companyLogoUrl
               }
               alt="Company Logo"
-              objectFit={isHovered ? "cover" : "contain"}
               layout="fill"
+              className={`${isHovered ? "object-cover" : "object-contain"}`}
             />
           </div>
         </div>

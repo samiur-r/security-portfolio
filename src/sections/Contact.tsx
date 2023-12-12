@@ -20,8 +20,8 @@ const Contact = () => {
             src="/contact-bg.svg"
             width={487.8}
             height={478.01}
-            objectFit="cover"
             alt="contact"
+            className="object-cover"
           />
         </div>
       </div>
