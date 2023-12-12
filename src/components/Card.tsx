@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import colors from "@/styles/colors";
 
 type CardProps = {
   backgroundColor?: string;
@@ -37,8 +38,8 @@ const Card: React.FC<CardProps> = ({
   const hoverStyle = {
     backgroundColor:
       isHovered && !hoverImageUrl && changeBgColorOnHover !== false
-        ? "#E8530E"
-        : backgroundColor || "transparent",
+        ? colors.brightOrange
+        : colors[backgroundColor as keyof typeof colors] || "transparent",
     transition: "background-color 300ms",
   };
 

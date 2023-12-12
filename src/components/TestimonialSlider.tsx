@@ -37,7 +37,7 @@ const TestimonialSlider: React.FC<TestimonialSliderProps> = ({
   return (
     <div className="container mx-auto p-4 lg:p-0 grid grid-cols-1 lg:grid-cols-12 gap-4 items-center rounded-lg overflow-hidden">
       <div
-        className="col-span-12 lg:col-span-11 flex flex-col lg:flex-row pt-5 lg:pt-0 bg-[#E5E7E8]"
+        className="col-span-12 lg:col-span-11 flex flex-col lg:flex-row pt-5 lg:pt-0 bg-light-gray"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
@@ -56,7 +56,7 @@ const TestimonialSlider: React.FC<TestimonialSliderProps> = ({
             layout="fill"
           />
         </div>
-        <div className="flex flex-col justify-center gap-5 p-10 text-[#313D46]">
+        <div className="flex flex-col justify-center gap-5 p-10 text-dark-blue">
           <p className="text-xl lg:text-3xl text-center lg:text-start">
             {testimonials[activeIndex].text}
           </p>
@@ -67,7 +67,7 @@ const TestimonialSlider: React.FC<TestimonialSliderProps> = ({
         </div>
       </div>
 
-      <div className="col-span-12 lg:col-span-1 h-full flex flex-col lg:items-start items-center bg-[#E5E7E8]">
+      <div className="col-span-12 lg:col-span-1 h-full flex flex-col lg:items-start items-center bg-light-gray">
         <div className="hidden lg:flex lg:flex-col lg:items-center justify-between h-full w-full pt-4">
           <button
             onClick={prevTestimonial}

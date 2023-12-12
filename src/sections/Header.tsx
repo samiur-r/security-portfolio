@@ -31,7 +31,7 @@ const Header: React.FC = () => {
       <header
         className={`fixed top-0 left-0 right-0 h-24 p-4 ${
           isScrolled
-            ? "bg-gradient-to-r from-black to-[#313D46] shadow-lg"
+            ? "bg-gradient-to-r from-black to-dark-blue shadow-lg"
             : "bg-transparent"
         } transition-all duration-300 ease-in-out z-20`}
       >

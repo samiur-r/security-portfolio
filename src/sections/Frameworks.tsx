@@ -9,7 +9,7 @@ const frameworks = [
     headline: "STANDARDS",
     bodyText:
       "Explore globally recognized standards such as ISO 27001 and SOC2 and get certified to demonstrate cybersecurity excellence.",
-    backgroundColor: "#313D46",
+    backgroundColor: "darkBlue",
     beforeImg: { url: "1.svg", width: 85, height: 175 },
     beforeImgHoveredUrl: "/1-hover.png",
     changeBgColorOnHover: false,
@@ -19,7 +19,7 @@ const frameworks = [
     headline: "REGULATIONS",
     bodyText:
       "Become compliant with regulations like HIPAA, ensuring the highest standards for safeguarding protected information.",
-    backgroundColor: "#E8530E",
+    backgroundColor: "brightOrange",
     beforeImg: { url: "2.svg", width: 144, height: 179 },
     beforeImgHoveredUrl: "/2-hover.png",
     changeBgColorOnHover: false,
@@ -29,7 +29,7 @@ const frameworks = [
     headline: "CUSTOMIZED LOCAL FRAMEWORKS",
     bodyText:
       "Craft tailored frameworks that fit your business’ goals and unique requirements. ",
-    backgroundColor: "#5F7E9F",
+    backgroundColor: "lightBlue",
     beforeImg: { url: "3.svg", width: 146, height: 183 },
     beforeImgHoveredUrl: "/3-hover.png",
     changeBgColorOnHover: false,

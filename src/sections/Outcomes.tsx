@@ -9,7 +9,7 @@ const outcomes = [
     bodyText:
       "We empower you with task automation so you can focus on the real deal: your business.",
     ctaText: "Know more",
-    backgroundColor: "#313D46",
+    backgroundColor: "darkBlue",
     beforeImg: {
       url: "outcome-1.svg",
       width: 202,
@@ -25,7 +25,7 @@ const outcomes = [
     bodyText:
       "We eliminate your certification concerns with structured processes and transparency.",
     ctaText: "Know more",
-    backgroundColor: "#313D46",
+    backgroundColor: "darkBlue",
     beforeImg: {
       url: "outcome-2.svg",
       width: 272,
@@ -41,7 +41,7 @@ const outcomes = [
     bodyText:
       "We ensure timely certification: forget the traditional path to compliance; your next chance is just here.",
     ctaText: "Know more",
-    backgroundColor: "#313D46",
+    backgroundColor: "darkBlue",
     beforeImg: {
       url: "outcome-3.svg",
       width: 202,

@@ -28,7 +28,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen, isMobile, handleSetShowMenu }) => {
 
   return (
     <div
-      className={`fixed inset-0 z-50 bg-[#313D46] transition-opacity duration-500 ${
+      className={`fixed inset-0 z-50 bg-dark-blue transition-opacity duration-500 ${
         isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
       style={{ backgroundImage: `url(/menu-bg.svg)`, backgroundSize: "cover" }}
@@ -59,7 +59,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen, isMobile, handleSetShowMenu }) => {
 
         <div className="flex gap-2">
           <div className="h-full p-5">
-            <nav className="border-r border-[#E5E7E8] pr-2 lg:pr-5">
+            <nav className="border-r border-light-gray pr-2 lg:pr-5">
               <ul>
                 {menuItems.map((item) => (
                   <li key={item.name} className="mb-6">

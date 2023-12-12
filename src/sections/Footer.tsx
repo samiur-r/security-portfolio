@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer2 = () => {
   return (
-    <footer className="bg-[#5F7E9F] text-white pt-8 px-2 lg:pt-16 relative overflow-hidden">
+    <footer className="bg-light-blue text-white pt-8 px-2 lg:pt-16 relative overflow-hidden">
       <Image
         src="/footer-bg-logo.svg"
         width={675}
@@ -108,7 +108,7 @@ const Footer2 = () => {
           </div>
         </div>
       </div>
-      <p className="text-center py-8 border-t border-[#E5E7E8] mt-6 leading-7 tracking-wider">
+      <p className="text-center py-8 border-t border-light-gray mt-6 leading-7 tracking-wider">
         © 2023 SKELDUS. All Rights Reserved
       </p>
     </footer>

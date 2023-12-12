@@ -3,14 +3,14 @@ import Image from "next/image";
 const Contact = () => {
   return (
     <section className="mb-20 px-5">
-      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 rounded-lg bg-[#E8530E]">
+      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 rounded-lg bg-bright-orange">
         <div className="flex flex-col gap-3 px-12 py-16">
           <h3 className="text-xl lg:text-3xl font-glancyr">HAVE AN INQUIRY?</h3>
           <h2 className="text-3xl lg:text-5xl font-bold font-glancyr">
             Let&apos;s talk about it!
           </h2>
           <div className="mt-8">
-            <button className="text-start py-1 px-0 border-b border-[#E5E7E8] transition duration-300">
+            <button className="text-start py-1 px-0 border-b border-light-gray transition duration-300">
               Get in touch
             </button>
           </div>

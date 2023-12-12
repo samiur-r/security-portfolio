@@ -41,7 +41,7 @@ const InsightCard: React.FC<InsightCardProps> = ({
         <div className="w-full">
           <Link
             href="/path-to-article"
-            className="rounded-full py-3 px-5 bg-[#E5E7E8] text-[#313D46]"
+            className="rounded-full py-3 px-5 bg-light-gray text-dark-blue"
           >
             {ctaText}
           </Link>

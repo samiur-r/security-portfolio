@@ -83,7 +83,7 @@ const ParallaxHero = () => {
                 </p>
 
                 <button
-                  className="bg-[#E5E7E8] hover:bg-gray-100 text-gray-800 py-2 px-4 border border-gray-400 rounded-full shadow"
+                  className="bg-light-gray hover:bg-gray-100 text-gray-800 py-2 px-4 border border-gray-400 rounded-full shadow"
                   style={{ opacity, transform }}
                 >
                   See it in action
@@ -120,7 +120,7 @@ const ParallaxHero = () => {
                   Earn <b> TRUST.</b>
                 </h1>
                 <button
-                  className="bg-[#E5E7E8] hover:bg-gray-100 text-gray-800 py-2 px-8 border border-gray-400 rounded-full shadow absolute bottom-12"
+                  className="bg-light-gray hover:bg-gray-100 text-gray-800 py-2 px-8 border border-gray-400 rounded-full shadow absolute bottom-12"
                   style={{ opacity: secondOpacity, transform: secondTransform }}
                 >
                   See it in action
