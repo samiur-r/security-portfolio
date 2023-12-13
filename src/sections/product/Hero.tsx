@@ -3,15 +3,14 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen pt-44 pb-20 flex flex-col gap-16 mx-auto container px-5">
+    <section className="min-h-screen pt-44 flex flex-col gap-16 mx-auto container px-5">
       <div className="grid grid-cols-1 lg:grid-cols-3 lg:px-0">
         <div className="lg:col-span-2 flex flex-col gap-8">
-          <div>
-            <p className="text-xl lg:text-3xl font-glancyr">SKELDUS Platform</p>
-            <h2 className="font-glancyr font-bold text-3xl lg:text-5xl max-w-3xl mt-5">
-              Your Go-to Compliance, Trust, and Security Platform
-            </h2>
-          </div>
+          <SectionHeader
+            subHeadline="SKELDUS Platform"
+            headline="Your Go-to Compliance, Trust, and Security Platform"
+          />
+
           <div className="max-w-xl">
             <p>
               At SKELDUS, we're here to empower you on your journey towards

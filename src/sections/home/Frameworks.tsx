@@ -39,10 +39,12 @@ const frameworks = [
 const Frameworks = () => {
   return (
     <section>
-      <SectionHeader
-        subHeadline="your needs, our expertise"
-        headline="Our Frameworks, For Your Regional Preference"
-      />
+      <div className="container lg:mx-auto px-5 lg:px-0 mb-4 lg:mb-16">
+        <SectionHeader
+          subHeadline="your needs, our expertise"
+          headline="Our Frameworks, For Your Regional Preference"
+        />
+      </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 px-5">
         {frameworks.map((framework) => (
           <Card

@@ -23,10 +23,12 @@ const testimonialsData = [
 const Testimonials = () => {
   return (
     <section>
-      <SectionHeader
-        subHeadline="REAL STORIES, REAL results"
-        headline="Discover the Secrets to Client Success"
-      />
+      <div className="container lg:mx-auto px-5 lg:px-0 mb-4 lg:mb-16">
+        <SectionHeader
+          subHeadline="REAL STORIES, REAL results"
+          headline="Discover the Secrets to Client Success"
+        />
+      </div>
       <div>
         <TestimonialSlider testimonials={testimonialsData} />
       </div>

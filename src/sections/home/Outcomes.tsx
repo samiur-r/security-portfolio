@@ -55,10 +55,12 @@ const outcomes = [
 const Outcomes = () => {
   return (
     <section>
-      <SectionHeader
-        subHeadline="wHY SKELDUS?"
-        headline="Elevated Compliance, 24/7 Assurance, Swift Outcomes."
-      />
+      <div className="container lg:mx-auto px-5 lg:px-0 mb-4 lg:mb-16">
+        <SectionHeader
+          subHeadline="wHY SKELDUS?"
+          headline="Elevated Compliance, 24/7 Assurance, Swift Outcomes."
+        />
+      </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-16 container px-5 lg:mx-auto">
         {outcomes.map((outcome) => (
           <Card
