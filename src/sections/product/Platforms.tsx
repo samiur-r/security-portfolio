@@ -2,9 +2,8 @@
 
 import Card from "@/components/Card";
 import SectionHeader from "@/components/SectionHeader";
-import useOutsideClick from "@/hooks/useOutsideClick";
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 const products = [
   {
@@ -73,7 +72,7 @@ const Platforms = () => {
   }, [selectedProduct]);
 
   return (
-    <div className="mb-20 mx-auto container px-5 flex flex-col gap-20">
+    <section className="mx-auto container px-5 flex flex-col gap-20">
       <SectionHeader subHeadline="PRODUCTS" headline="The world of SKELDUS" />
       <div className="relative">
         <svg
@@ -340,7 +339,7 @@ const Platforms = () => {
           </div>
         )}
       </div>
-    </div>
+    </section>
   );
 };
 
