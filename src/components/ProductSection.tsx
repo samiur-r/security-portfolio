@@ -8,7 +8,8 @@ type ProductProps = {
   headline: string;
   description: string;
   imageUrl?: string;
-  data: Product[]
+  data: Product[];
+  textDark?: boolean;
 };
 
 const ProductSection: React.FC<ProductProps> = ({
@@ -16,7 +17,8 @@ const ProductSection: React.FC<ProductProps> = ({
   headline,
   description,
   imageUrl,
-  data
+  data,
+  textDark,
 }) => {
   return (
     <section className="mx-auto container px-5 py-5">
@@ -26,7 +28,11 @@ const ProductSection: React.FC<ProductProps> = ({
             <Image src={imageUrl} width={150} height={150} alt="" />
           </div>
         )}
-        <div className="flex flex-col gap-8 flex-1 order-2 lg:order-1 max-w-2xl">
+        <div
+          className={`flex flex-col gap-8 flex-1 order-2 lg:order-1 max-w-2xl ${
+            textDark && "text-dark-blue"
+          }`}
+        >
           <SectionHeader subHeadline={subHeadline} headline={headline} />
           <p className="">{description}</p>
         </div>
