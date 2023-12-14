@@ -32,7 +32,7 @@ const Modal: React.FC<ModalProps> = ({ autoOpenDelay = 5000, children }) => {
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="relative top-20 mx-auto p-5 border w-full container shadow-lg rounded-md bg-light-gray"
+        className="relative top-0 lg:my-5 mx-auto p-5 border w-full container shadow-lg rounded-md bg-light-gray"
       >
         <div className="flex justify-end">
           <Image

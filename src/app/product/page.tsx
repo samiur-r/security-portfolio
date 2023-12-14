@@ -10,7 +10,7 @@ import Trust from "@/sections/product/Trust";
 import Modal from "@/components/Modal";
 import ProductSection from "@/components/ProductSection";
 
-export default function Home() {
+export default function Product() {
   return (
     <section className="flex flex-col gap-20 mb-20">
       <Modal autoOpenDelay={1000}>
