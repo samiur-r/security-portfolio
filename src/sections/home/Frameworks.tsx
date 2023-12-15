@@ -36,7 +36,7 @@ const frameworks = [
   },
 ];
 
-const Frameworks = () => {
+const Frameworks = ({ showCTA }: { showCTA: boolean }) => {
   return (
     <section>
       <div className="container lg:mx-auto px-5 lg:px-0 mb-4 lg:mb-16">
@@ -58,11 +58,13 @@ const Frameworks = () => {
           />
         ))}
       </div>
-      <div className="flex justify-center mt-16 lg:mt-20 tracking-widest">
-        <Link href="#" className="pb-2 border-b">
-          Explore all our frameworks
-        </Link>
-      </div>
+      {showCTA && (
+        <div className="flex justify-center mt-16 lg:mt-20 tracking-widest">
+          <Link href="#" className="pb-2 border-b">
+            Explore all our frameworks
+          </Link>
+        </div>
+      )}
     </section>
   );
 };

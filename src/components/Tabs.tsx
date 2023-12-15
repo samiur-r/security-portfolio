@@ -21,7 +21,7 @@ const Tabs: React.FC<TabsProps> = ({ tabs }) => {
 
   return (
     <div>
-      <div className="bg-light-gray">
+      <div className="bg-light-gray px-5 lg:px-0 overflow-x-auto">
         <div className="container mx-auto">
           <div className="flex gap-10 pb-.5">
             {tabs.map((tab) => (
@@ -40,7 +40,7 @@ const Tabs: React.FC<TabsProps> = ({ tabs }) => {
           </div>
         </div>
       </div>
-      <div className="p-5 mt-2 container mx-auto flex justify-center min-h-screen">
+      <div className="pt-16 px-5 lg:px-0 container mx-auto flex justify-center min-h-screen">
         <Suspense
           fallback={
             <svg

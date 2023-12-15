@@ -35,7 +35,7 @@ export default function Home() {
             className="object-contain"
           />
         </div>
-        <Frameworks />
+        <Frameworks showCTA/>
         <Testimonials />
         <Partners />
       </div>
