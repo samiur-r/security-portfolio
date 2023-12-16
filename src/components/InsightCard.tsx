@@ -8,6 +8,7 @@ interface InsightCardProps {
   bodyText: string;
   imageUrl: string;
   ctaText: string;
+  ctaOutlined: boolean;
 }
 
 const InsightCard: React.FC<InsightCardProps> = ({
@@ -17,6 +18,7 @@ const InsightCard: React.FC<InsightCardProps> = ({
   bodyText,
   imageUrl,
   ctaText,
+  ctaOutlined,
 }) => {
   return (
     <div
@@ -41,7 +43,11 @@ const InsightCard: React.FC<InsightCardProps> = ({
         <div className="w-full">
           <Link
             href="/path-to-article"
-            className="rounded-full py-3 px-5 bg-light-gray text-dark-blue"
+            className={`py-3 ${
+              ctaOutlined
+                ? "rounded-full bg-light-gray text-dark-blue px-5"
+                : "border-b text-light-gray"
+            }`}
           >
             {ctaText}
           </Link>

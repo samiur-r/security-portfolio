@@ -43,6 +43,7 @@ const Insights = () => {
             headline={insight.headline}
             bodyText={insight.bodyText}
             ctaText={insight.ctaText}
+            ctaOutlined
           />
         ))}
       </div>

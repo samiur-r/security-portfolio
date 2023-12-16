@@ -6,7 +6,6 @@ import React, { useState } from "react";
 interface Testimonial {
   id: number;
   imageUrl: string;
-  companyLogoUrl: string;
   text: string;
   name: string;
   title: string;
@@ -20,7 +19,6 @@ const TestimonialSlider: React.FC<TestimonialSliderProps> = ({
   testimonials,
 }) => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [isHovered, setIsHovered] = useState(false);
 
   const nextTestimonial = () => {
     setActiveIndex((current) =>
@@ -36,22 +34,10 @@ const TestimonialSlider: React.FC<TestimonialSliderProps> = ({
 
   return (
     <div className="container mx-auto p-4 lg:p-0 grid grid-cols-1 lg:grid-cols-12 gap-4 items-center rounded-lg overflow-hidden">
-      <div
-        className="col-span-12 lg:col-span-11 flex flex-col lg:flex-row pt-5 lg:pt-0 bg-light-gray"
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-      >
-        <div
-          className={`relative min-h-[345px] min-w-[244px] lg:min-h-[345px] lg:min-w-[244px] ${
-            isHovered && "mx-5"
-          }`}
-        >
+      <div className="col-span-12 lg:col-span-11 flex flex-col lg:flex-row pt-5 lg:pt-0 bg-light-gray">
+        <div className="relative min-h-[345px] min-w-[244px] lg:min-h-[345px] lg:min-w-[244px]">
           <Image
-            src={
-              isHovered
-                ? testimonials[activeIndex].companyLogoUrl
-                : testimonials[activeIndex].imageUrl
-            }
+            src={testimonials[activeIndex].imageUrl}
             alt={testimonials[activeIndex].name}
             layout="fill"
           />
@@ -86,13 +72,13 @@ const TestimonialSlider: React.FC<TestimonialSliderProps> = ({
           <div className="bg-white flex justify-center items-center w-full h-[100px] relative">
             <Image
               src={
-                isHovered
-                  ? testimonials[activeIndex].imageUrl
-                  : testimonials[activeIndex].companyLogoUrl
+                testimonials[
+                  activeIndex === testimonials.length - 1 ? 0 : activeIndex + 1
+                ].imageUrl
               }
               alt="Company Logo"
               layout="fill"
-              className={`${isHovered ? "object-cover" : "object-contain"}`}
+              className="object-contain"
             />
           </div>
         </div>
@@ -107,9 +93,9 @@ const TestimonialSlider: React.FC<TestimonialSliderProps> = ({
           <div className="bg-white flex justify-center items-center w-full">
             <Image
               src={
-                isHovered
-                  ? testimonials[activeIndex].imageUrl
-                  : testimonials[activeIndex].companyLogoUrl
+                testimonials[
+                  activeIndex === testimonials.length - 1 ? 0 : activeIndex + 1
+                ].imageUrl
               }
               alt="Company Logo"
               width={80}

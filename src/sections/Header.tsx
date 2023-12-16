@@ -16,7 +16,9 @@ const Header: React.FC = () => {
   const pathname = usePathname();
 
   useEffect(() => {
-    if (pathname === "/product" || pathname === "/frameworks" || pathname === "/about-us")
+    if (
+      pathname !== "/"
+    )
       setShowPageTitle(true);
     else setShowPageTitle(false);
   }, [pathname]);

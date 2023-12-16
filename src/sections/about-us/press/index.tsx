@@ -1,6 +1,6 @@
 "use client";
 
-import ContentThumbnail from "@/components/ContentThumbnail";
+import TopThumbnailCard from "@/components/TopThumbnailCard";
 import React, { useState } from "react";
 
 const articles = [
@@ -96,7 +96,7 @@ const Press = () => {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
         {articles.slice(0, visibleItems).map((article) => (
-          <ContentThumbnail
+          <TopThumbnailCard
             key={article.id}
             thumbnailImage={article.imageUrl}
             date={article.date}
