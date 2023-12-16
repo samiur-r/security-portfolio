@@ -1,4 +1,3 @@
-import SectionHeader from "@/components/SectionHeader";
 import Image from "next/image";
 import Link from "next/link";
 

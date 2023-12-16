@@ -10,7 +10,7 @@ type CardProps = {
   topImageAlt?: string;
   topText?: string;
   headline: string;
-  bodyText: string;
+  bodyText?: string;
   ctaText?: string;
   beforeImg?: { url: string; height: number; width: number; isTop?: boolean };
   beforeImgHoveredUrl?: string;
@@ -112,9 +112,13 @@ const Card: React.FC<CardProps> = ({
             <h2 className="text-3xl font-glancyr h-16 mb-5 mt-8 max-w-xs">
               {headline}
             </h2>
-            <p className={`text-base ${ctaText && !topText ? "h-40" : "h-20"}`}>
-              {bodyText}
-            </p>
+            {bodyText && (
+              <p
+                className={`text-base ${ctaText && !topText ? "h-40" : "h-20"}`}
+              >
+                {bodyText}
+              </p>
+            )}
             {ctaText && (
               <button className="pb-2 border-b mt-5" onClick={onCtaClick}>
                 {ctaText}

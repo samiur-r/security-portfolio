@@ -23,7 +23,7 @@ const BusinessCard: React.FC<BusinessCardProps> = ({
     >
       <div className="">{topText}</div>
       <h2 className="text-3xl font-glancyr h-16 mb-5 mt-8">{headline}</h2>
-      <p className={`text-base h-20`}>{bodyText}</p>
+      <p className="h-20" dangerouslySetInnerHTML={{ __html: bodyText }}></p>
     </div>
   );
 };
