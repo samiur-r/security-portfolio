@@ -4,6 +4,12 @@ import React, { useState } from "react";
 import Image from "next/image";
 import colors from "@/styles/colors";
 
+type Brand = {
+  id: number;
+  title: string;
+  img: { src: string; width: number; height: number };
+};
+
 type CardProps = {
   backgroundColor?: string;
   topImageSrc?: string;
@@ -17,6 +23,7 @@ type CardProps = {
   hoverImageUrl?: { url: string; height: number; width: number };
   changeBgColorOnHover?: boolean;
   onCtaClick?: () => void;
+  brands?: Brand[];
 };
 
 const Card: React.FC<CardProps> = ({
@@ -32,8 +39,14 @@ const Card: React.FC<CardProps> = ({
   hoverImageUrl,
   changeBgColorOnHover,
   onCtaClick,
+  brands,
 }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const [visibleItems, setVisibleItems] = useState(6);
+
+  const loadMore = () => {
+    setVisibleItems((prevItems) => prevItems + 3);
+  };
 
   const hoverStyle = {
     backgroundColor:
@@ -126,6 +139,31 @@ const Card: React.FC<CardProps> = ({
             )}
           </div>
         </>
+      )}
+      {brands && (
+        <div className="px-8">
+          <hr className="border-t border-light-gray"></hr>
+          <div className="grid grid-cols-2 gap-20 py-16">
+            {brands.slice(0, visibleItems).map((brand) => (
+              <div key={brand.id} className="flex flex-col items-center gap-5">
+                <Image
+                  src={brand.img.src}
+                  alt=""
+                  width={brand.img.width}
+                  height={brand.img.height}
+                />
+                <p className="">{brand.title}</p>
+              </div>
+            ))}
+          </div>
+          {visibleItems < brands.length && (
+            <div className="flex justify-center tracking-widest mb-16">
+              <button className="pb-2 border-b" onClick={loadMore}>
+                load more
+              </button>
+            </div>
+          )}
+        </div>
       )}
     </div>
   );
