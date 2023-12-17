@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
@@ -28,14 +30,14 @@ const Accordion: React.FC<AccordionProps> = ({ accordionItems }) => {
                       <span className="ml-6 flex h-7 items-center">
                         {open ? (
                           <Image
-                            src="close-accordion.svg"
+                            src="/close-accordion.svg"
                             width={24}
                             height={24}
                             alt=""
                           />
                         ) : (
                           <Image
-                            src="open-accordion.svg"
+                            src="/open-accordion.svg"
                             width={24}
                             height={24}
                             alt=""

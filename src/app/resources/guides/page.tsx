@@ -9,7 +9,7 @@ import GuideSlider from "@/components/GuideSlider";
 const articles = [
   {
     id: 1,
-    imageUrl: "article-1.svg",
+    imageUrl: "/article-1.svg",
     date: "08 NOV. 2023",
     author: "BY JANE DOE",
     title: "TITLE OF THE ARTICLE HERE",
@@ -19,7 +19,7 @@ const articles = [
   },
   {
     id: 2,
-    imageUrl: "article-2.svg",
+    imageUrl: "/article-2.svg",
     date: "08 NOV. 2023",
     author: "BY JANE DOE",
     title: "TITLE OF THE ARTICLE HERE",
@@ -29,7 +29,7 @@ const articles = [
   },
   {
     id: 3,
-    imageUrl: "article-3.svg",
+    imageUrl: "/article-3.svg",
     date: "08 NOV. 2023",
     author: "BY JANE DOE",
     title: "TITLE OF THE ARTICLE HERE",
@@ -39,7 +39,7 @@ const articles = [
   },
   {
     id: 4,
-    imageUrl: "article-4.svg",
+    imageUrl: "/article-4.svg",
     date: "08 NOV. 2023",
     author: "BY JANE DOE",
     title: "TITLE OF THE ARTICLE HERE",
@@ -52,14 +52,14 @@ const articles = [
 const data = [
   {
     id: 1,
-    imageUrl: "guide-slide-1.svg",
+    imageUrl: "/guide-slide-1.svg",
     text: "I can't emphasize enough the peace of mind and confidence that investing in robust cybersecurity measures has brought to our organization.",
     name: "John Wilson",
     title: "Chief Executive Officer, Harvard University",
   },
   {
     id: 2,
-    imageUrl: "guide-slide-2.svg",
+    imageUrl: "/guide-slide-2.svg",
     text: "I can't emphasize enough the peace of mind and confidence that investing in robust cybersecurity measures has brought to our organization. 2",
     name: "John Wilson 2",
     title: "Chief Executive Officer, Harvard University 2",
@@ -74,7 +74,7 @@ const Guides = () => {
   };
 
   return (
-    <section className="flex flex-col gap-20 w-full">
+    <section className="my-12 px-5 container mx-auto flex flex-col gap-20 w-full">
       <div className="flex flex-col lg:flex-row gap-5">
         <div className="flex items-center gap-2">
           <Image src="/time.svg" width={24} height={24} alt="" />

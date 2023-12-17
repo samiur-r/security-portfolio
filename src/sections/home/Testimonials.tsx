@@ -21,9 +21,9 @@ const testimonialsData = [
 const Testimonials = () => {
   return (
     <section>
-      <div className="container lg:mx-auto px-5 lg:px-0 mb-4 lg:mb-16">
+      <div className="container xl:mx-auto px-5 xl:px-0 mb-4 xl:mb-16">
         <SectionHeader
-          subHeadline="REAL STORIES, REAL results"
+          subHeadline="REAL STORIES, REAL RESULTS"
           headline="Discover the Secrets to Client Success"
         />
       </div>

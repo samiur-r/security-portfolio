@@ -37,15 +37,15 @@ const products = [
 const Products = () => {
   return (
     <section>
-      <div className="pt-20 pb-10 lg:pb-0">
-        <div className="container lg:mx-auto px-5 lg:px-0 mb-4 lg:mb-16">
+      <div className="pt-20 pb-10 xl:pb-0">
+        <div className="container xl:mx-auto px-5 xl:px-0 mb-4 xl:mb-16">
           <SectionHeader
             subHeadline="HOW WE GET IT DONE"
             headline="Your road to total confidence with SKELDUS"
           />
         </div>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 px-5">
+      <div className="grid grid-cols-1 xl:grid-cols-3 px-5">
         {products.map((product) => (
           <Card
             key={product.id}

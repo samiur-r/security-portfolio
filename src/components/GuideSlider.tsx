@@ -42,14 +42,14 @@ const GuideSlider: React.FC<GuideSliderProps> = ({ guides }) => {
             className="text-black disabled:text-gray-400"
             aria-label="Previous"
           >
-            <Image src="Arrow_left.svg" height={50} width={50} alt="" />
+            <Image src="/Arrow_left.svg" height={50} width={50} alt="" />
           </button>
           <button
             onClick={nextTestimonial}
             className="text-black disabled:text-gray-400"
             aria-label="Next"
           >
-            <Image src="Arrow_right.svg" height={50} width={50} alt="" />
+            <Image src="/Arrow_right.svg" height={50} width={50} alt="" />
           </button>
           <div className="bg-white flex justify-center items-center w-full h-[100px] relative">
             <Image

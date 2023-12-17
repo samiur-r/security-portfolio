@@ -9,7 +9,7 @@ const companyOptions = ["Opt 1", "Opt 2"];
 
 const Certifications = () => {
   return (
-    <section className="flex flex-col gap-8">
+    <section className="flex flex-col gap-8 container mx-auto">
       <SectionHeader
         subHeadline="FILTERING TOOL"
         headline="Explore below and discover which certifications your need"
@@ -65,7 +65,7 @@ const Certifications = () => {
               width: "1px",
             }}
           ></div>
-          <Image src="certification-1.svg" width={145} height={147} alt="" />
+          <Image src="/certification-1.svg" width={145} height={147} alt="" />
           <p>ISO 27001</p>
         </div>
         <div className="flex-1 flex flex-col gap-8 items-center border-b border-light-gray pb-10 overflow-hidden lg:relative">
@@ -79,11 +79,11 @@ const Certifications = () => {
               width: "1px",
             }}
           ></div>
-          <Image src="certification-2.svg" width={161} height={147} alt="" />
+          <Image src="/certification-2.svg" width={161} height={147} alt="" />
           <p>SOC 2</p>
         </div>
         <div className="flex-1 flex flex-col gap-8 items-center border-b border-light-gray pb-10">
-          <Image src="certification-3.svg" width={254} height={138} alt="" />
+          <Image src="/certification-3.svg" width={254} height={138} alt="" />
           <p>HIPAA</p>
         </div>
       </div>

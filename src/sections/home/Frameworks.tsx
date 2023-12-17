@@ -10,7 +10,7 @@ const frameworks = [
     bodyText:
       "Explore globally recognized standards such as ISO 27001 and SOC2 and get certified to demonstrate cybersecurity excellence.",
     backgroundColor: "darkBlue",
-    beforeImg: { url: "1.svg", width: 85, height: 175 },
+    beforeImg: { url: "/1.svg", width: 85, height: 175 },
     beforeImgHoveredUrl: "/1-hover.png",
     changeBgColorOnHover: false,
   },
@@ -20,7 +20,7 @@ const frameworks = [
     bodyText:
       "Become compliant with regulations like HIPAA, ensuring the highest standards for safeguarding protected information.",
     backgroundColor: "brightOrange",
-    beforeImg: { url: "2.svg", width: 144, height: 179 },
+    beforeImg: { url: "/2.svg", width: 144, height: 179 },
     beforeImgHoveredUrl: "/2-hover.png",
     changeBgColorOnHover: false,
   },
@@ -30,7 +30,7 @@ const frameworks = [
     bodyText:
       "Craft tailored frameworks that fit your business’ goals and unique requirements. ",
     backgroundColor: "lightBlue",
-    beforeImg: { url: "3.svg", width: 146, height: 183 },
+    beforeImg: { url: "/3.svg", width: 146, height: 183 },
     beforeImgHoveredUrl: "/3-hover.png",
     changeBgColorOnHover: false,
   },
@@ -39,13 +39,13 @@ const frameworks = [
 const Frameworks = ({ showCTA }: { showCTA: boolean }) => {
   return (
     <section>
-      <div className="container lg:mx-auto px-5 lg:px-0 mb-4 lg:mb-16">
+      <div className="container xl:mx-auto mb-4 xl:mb-16">
         <SectionHeader
-          subHeadline="your needs, our expertise"
+          subHeadline="YOUR NEEDS, OUR EXPERTISE"
           headline="Our Frameworks, For Your Regional Preference"
         />
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 px-5">
+      <div className="grid grid-cols-1 xl:grid-cols-3">
         {frameworks.map((framework) => (
           <Card
             key={framework.id}
@@ -59,7 +59,7 @@ const Frameworks = ({ showCTA }: { showCTA: boolean }) => {
         ))}
       </div>
       {showCTA && (
-        <div className="flex justify-center mt-16 lg:mt-20 tracking-widest">
+        <div className="flex justify-center mt-16 xl:mt-20 tracking-widest">
           <Link href="#" className="pb-2 border-b">
             Explore all our frameworks
           </Link>

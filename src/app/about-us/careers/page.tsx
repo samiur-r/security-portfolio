@@ -96,8 +96,8 @@ const Careers = () => {
   };
 
   return (
-    <section className="flex flex-col gap-20">
-      <div>
+    <section className="my-12 px-5 flex flex-col gap-20">
+      <div className="container mx-auto">
         <h2 className="font-glancyr font-bold text-3xl lg:text-5xl">
           Are you a dynamic, forward-thinking, and innovative person? Then your
           place is within the SKELDUS team.
@@ -107,7 +107,7 @@ const Careers = () => {
           future of digital protection with us.
         </p>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 px-5 lg:px-0">
+      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 px-5 lg:px-0">
         {careers.slice(0, visibleItems).map((career) => (
           <Card
             key={career.id}
@@ -125,7 +125,7 @@ const Careers = () => {
           </button>
         </div>
       )}
-      <div className="flex flex-col gap-10">
+      <div className="container mx-auto flex flex-col gap-10">
         <h3 className="text-xl lg:text-3xl font-glancyr">Locations</h3>
         <p className="max-w-lg">
           We're a globally distributed team with colleagues spanning the world
@@ -133,7 +133,7 @@ const Careers = () => {
         </p>
       </div>
       <Image
-        src="map.svg"
+        src="/map.svg"
         alt="map"
         width={1300}
         height={603}

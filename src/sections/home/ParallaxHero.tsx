@@ -15,12 +15,12 @@ const ParallaxHero = () => {
   useEffect(() => {
     let newHeight;
 
-    setIsMobile(window.innerWidth < 820);
+    setIsMobile(window.innerWidth < 1024);
 
     const handleScroll = () => {
-      if (window.innerWidth > 820) {
+      if (window.innerWidth > 1024) {
         const scroll = window.scrollY;
-        const minWidth = window.innerWidth <= 820 ? 350 : 1100;
+        const minWidth = window.innerWidth <= 1024 ? 350 : 1100;
         const newWidth = Math.max(minWidth, window.innerWidth - scroll);
         const aspectRatio = window.innerHeight / window.innerWidth;
         newHeight = newWidth * aspectRatio;
@@ -61,17 +61,17 @@ const ParallaxHero = () => {
         style={{ height: isMobile ? "100vh" : "250vh" }}
       >
         <div className="h-screen sticky top-0 flex justify-center items-center">
-          <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-start container mx-auto z-30 px-5 lg:px-auto">
+          <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-start container mx-auto z-30 px-5 xl:px-auto">
             {opacity !== 0 && (
               <>
                 <h1
-                  className="text-4xl mb-4 font-glancyr lg:text-7xl tracking-[5px] leading-10"
+                  className="text-4xl mb-4 font-glancyr xl:text-7xl tracking-[5px] leading-10"
                   style={{ opacity, transform }}
                 >
                   ACHIEVE <b>COMPLIANCE,</b>
                 </h1>
                 <h1
-                  className="text-4xl font-glancyr lg:text-7xl tracking-[5px] leading-10"
+                  className="text-4xl font-glancyr xl:text-7xl tracking-[5px] leading-10"
                   style={{ opacity, transform }}
                 >
                   STAY <b>SECURE,</b> Earn <b>TRUST.</b>
@@ -99,14 +99,14 @@ const ParallaxHero = () => {
                 style={{ height: height }}
               >
                 <h1
-                  className="text-4xl font-glancyr lg:text-7xl tracking-[5px] leading-10"
+                  className="text-4xl font-glancyr xl:text-7xl tracking-[5px] leading-10"
                   style={{ opacity: secondOpacity, transform: secondTransform }}
                 >
                   ACHIEVE <b>COMPLIANCE,</b>
                 </h1>
                 <div className="w-full flex justify-center">
                   <h1
-                    className="font-glancyr lg:text-7xl tracking-[5px] leading-10 text-4xl"
+                    className="font-glancyr xl:text-7xl tracking-[5px] leading-10 text-4xl"
                     style={{
                       opacity: secondOpacity,
                       transform: secondTransform,
@@ -117,7 +117,7 @@ const ParallaxHero = () => {
                   </h1>
                 </div>
                 <h1
-                  className="text-4xl font-glancyr lg:text-7xl tracking-[5px] leading-10 w-full flex justify-end"
+                  className="text-4xl font-glancyr xl:text-7xl tracking-[5px] leading-10 w-full flex justify-end"
                   style={{ opacity: secondOpacity, transform: secondTransform }}
                 >
                   Earn <b> TRUST.</b>

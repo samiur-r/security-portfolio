@@ -33,9 +33,9 @@ const TestimonialSlider: React.FC<TestimonialSliderProps> = ({
   };
 
   return (
-    <div className="container mx-auto p-4 lg:p-0 grid grid-cols-1 lg:grid-cols-12 gap-4 items-center rounded-lg overflow-hidden">
-      <div className="col-span-12 lg:col-span-11 flex flex-col lg:flex-row pt-5 lg:pt-0 bg-light-gray">
-        <div className="relative min-h-[345px] min-w-[244px] lg:min-h-[345px] lg:min-w-[244px]">
+    <div className="container mx-auto p-4 xl:p-0 grid grid-cols-1 xl:grid-cols-12 gap-4 items-center rounded-xl overflow-hidden">
+      <div className="col-span-12 xl:col-span-11 flex flex-col xl:flex-row pt-5 xl:pt-0 bg-light-gray">
+        <div className="relative min-h-[345px] min-w-[244px] xl:min-h-[345px] xl:min-w-[244px]">
           <Image
             src={testimonials[activeIndex].imageUrl}
             alt={testimonials[activeIndex].name}
@@ -43,18 +43,18 @@ const TestimonialSlider: React.FC<TestimonialSliderProps> = ({
           />
         </div>
         <div className="flex flex-col justify-center gap-5 p-10 text-dark-blue">
-          <p className="text-xl lg:text-3xl text-center lg:text-start">
+          <p className="text-xl xl:text-3xl text-center xl:text-start">
             {testimonials[activeIndex].text}
           </p>
-          <div className="flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-start gap-2">
+          <div className="flex flex-col xl:flex-row items-center xl:items-start text-center xl:text-start gap-2">
             <p> {testimonials[activeIndex].name},</p>
             <p>{testimonials[activeIndex].title}</p>
           </div>
         </div>
       </div>
 
-      <div className="col-span-12 lg:col-span-1 h-full flex flex-col lg:items-start items-center bg-light-gray">
-        <div className="hidden lg:flex lg:flex-col lg:items-center justify-between h-full w-full pt-4">
+      <div className="col-span-12 xl:col-span-1 h-full flex flex-col xl:items-start items-center bg-light-gray">
+        <div className="hidden xl:flex xl:flex-col xl:items-center justify-between h-full w-full pt-4">
           <button
             onClick={prevTestimonial}
             className="text-black disabled:text-gray-400"
@@ -82,7 +82,7 @@ const TestimonialSlider: React.FC<TestimonialSliderProps> = ({
             />
           </div>
         </div>
-        <div className="flex lg:hidden justify-between w-full">
+        <div className="flex xl:hidden justify-between w-full">
           <button
             onClick={prevTestimonial}
             className="text-black disabled:text-gray-400"

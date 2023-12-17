@@ -11,14 +11,14 @@ const companyOptions = ["Opt 1", "Opt 2"];
 const testimonialsData = [
   {
     id: 1,
-    imageUrl: "testimonial-person-1.svg",
+    imageUrl: "/testimonial-person-1.svg",
     text: "I can't emphasize enough the peace of mind and confidence that investing in robust cybersecurity measures has brought to our organization.",
     name: "John Wilson",
     title: "Chief Executive Officer, Harvard University",
   },
   {
     id: 2,
-    imageUrl: "testimonial-company-1.svg",
+    imageUrl: "/testimonial-company-1.svg",
     text: "I can't emphasize enough the peace of mind and confidence that investing in robust cybersecurity measures has brought to our organization. 2",
     name: "John Wilson 2",
     title: "Chief Executive Officer, Harvard University 2",
@@ -27,7 +27,7 @@ const testimonialsData = [
 
 const ClientStories = () => {
   return (
-    <section className="flex flex-col gap-16 w-full">
+    <section className="my-12 px-5 container mx-auto flex flex-col gap-16 w-full">
       <div>
         <p>Filter Blog articles by</p>
         <div className="flex flex-col lg:flex-row gap-10 lg:justify-between items-center lg:items-start mt-5">

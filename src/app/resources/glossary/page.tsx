@@ -83,8 +83,8 @@ const items = [
 
 const Glossary = () => {
   return (
-    <section className="flex flex-col gap-20 w-full">
-      <div className="flex flex-col gap-8">
+    <section className="my-12 px-5 flex flex-col gap-20 w-full">
+      <div className="container mx-auto flex flex-col gap-8">
         <h1 className="font-glancyr font-bold text-3xl lg:text-5xl max-w-3xl">
           SKELDUS Glossary
         </h1>

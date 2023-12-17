@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 
 import Menu from "@/components/Menu";
+import Link from "next/link";
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,10 +17,7 @@ const Header: React.FC = () => {
   const pathname = usePathname();
 
   useEffect(() => {
-    if (
-      pathname !== "/"
-    )
-      setShowPageTitle(true);
+    if (pathname !== "/") setShowPageTitle(true);
     else setShowPageTitle(false);
   }, [pathname]);
 
@@ -34,6 +32,14 @@ const Header: React.FC = () => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const parsePathName = (path: string) => {
+    let afterFirstSlash = path.slice(path.indexOf("/") + 1);
+
+    if (afterFirstSlash.includes("/"))
+      return afterFirstSlash.slice(0, afterFirstSlash.indexOf("/")).toUpperCase();
+    else return afterFirstSlash.toUpperCase();
+  };
 
   return (
     <section>
@@ -52,7 +58,7 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center h-full container mx-auto">
           <div>
             {pathname && showPageTitle !== undefined && (
-              <>
+              <Link href="/">
                 {isScrolled || showPageTitle ? (
                   <Image
                     src="/logo_2.svg"
@@ -70,12 +76,12 @@ const Header: React.FC = () => {
                     className="cursor-pointer"
                   />
                 )}
-              </>
+              </Link>
             )}
           </div>
           {showPageTitle && (
             <div className="font-glancyr text-xl lg:text-3xl">
-              {pathname.slice(1).toUpperCase()}
+              {parsePathName(pathname)}
             </div>
           )}
           <div>

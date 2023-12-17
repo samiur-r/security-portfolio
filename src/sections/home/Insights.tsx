@@ -27,13 +27,13 @@ const insights = [
 const Insights = () => {
   return (
     <section className="mb-20">
-      <div className="container lg:mx-auto px-5 lg:px-0 mb-4 lg:mb-16">
+      <div className="container xl:mx-auto px-5 xl:px-0 mb-4 xl:mb-16">
         <SectionHeader
-          subHeadline="Explore Our Insights"
+          subHeadline="EXPLORE OUR INSIGHTS"
           headline="Our Insightful Knowledge Base"
         />
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 px-5 gap-5 lg:gap-0">
+      <div className="grid grid-cols-1 xl:grid-cols-2 px-5 gap-5 xl:gap-0">
         {insights.map((insight) => (
           <InsightCard
             key={insight.id}

@@ -38,13 +38,13 @@ const partners = [
 const Partners = () => {
   return (
     <section>
-      <div className="container lg:mx-auto px-5 lg:px-0 mb-4 lg:mb-16">
+      <div className="container xl:mx-auto px-5 xl:px-0 mb-4 xl:mb-16">
         <SectionHeader
-          subHeadline="powerful collaborations"
+          subHeadline="POWERFUL COLLABORATIONS"
           headline="Meet our Partners"
         />
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 px-5">
+      <div className="grid grid-cols-1 xl:grid-cols-3 px-5">
         {partners.map((partner) => (
           <Card
             key={partner.id}
@@ -55,7 +55,7 @@ const Partners = () => {
           />
         ))}
       </div>
-      <div className="flex justify-center mt-16 lg:mt-20 tracking-widest">
+      <div className="flex justify-center mt-16 xl:mt-20 tracking-widest">
         <Link href="#" className="pb-2 border-b">
           Explore the strength of partnerships
         </Link>

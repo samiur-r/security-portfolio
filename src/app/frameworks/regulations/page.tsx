@@ -34,21 +34,21 @@ const certificationItems = [
   {
     id: 1,
     topText: "HIPAA",
-    topImage: { url: "certification-3.svg", width: 254, height: 138 },
+    topImage: { url: "/certification-3.svg", width: 254, height: 138 },
     bodyText:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,",
   },
   {
     id: 2,
     topText: "GPDR",
-    topImage: { url: "gpdr.svg", width: 130, height: 130 },
+    topImage: { url: "/gpdr.svg", width: 130, height: 130 },
     bodyText:
       "As consumers become increasingly aware of these risks, they demand greater transparency from companies handling their personal data. This has led to the emergence of data privacy regulations such as HIPAA and GDPR, which serve as legal frameworks to protect individuals' rights and ensure responsible data handling practices.",
   },
   {
     id: 3,
     topText: "CCPA",
-    topImage: { url: "ccpa.svg", width: 239, height: 94 },
+    topImage: { url: "/ccpa.svg", width: 239, height: 94 },
     bodyText:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,",
   },
@@ -56,29 +56,32 @@ const certificationItems = [
 
 const Regulations = () => {
   return (
-    <section className="flex flex-col gap-16 w-full">
-      <h2 className="font-glancyr font-bold text-3xl lg:text-5xl mt-5">
-        Regulations
-      </h2>
-      <div className="flex flex-col lg:flex-row lg:justify-between gap-16 ">
-        <p>
-          In today's digital age, personal data is constantly being collected,
-          stored, and processed by various entities. This vast amount of
-          information encompasses sensitive details such as names, addresses,
-          and online activity logs, which can lead to identity theft, financial
-          fraud, and reputational damage when they fall into the wrong hands.
-        </p>
-        <p>
-          As consumers become increasingly aware of these risks, they demand
-          greater transparency from companies handling their personal data. This
-          has led to the emergence of data privacy regulations such as HIPAA and
-          GDPR, which serve as legal frameworks to protect individuals' rights
-          and ensure responsible data handling practices.
-        </p>
+    <section className="my-12 px-5 flex flex-col gap-16 w-full">
+      <div className="container mx-auto flex flex-col gap-16">
+        <h2 className="font-glancyr font-bold text-3xl lg:text-5xl mt-5">
+          Regulations
+        </h2>
+        <div className="flex flex-col lg:flex-row lg:justify-between gap-16 ">
+          <p>
+            In today's digital age, personal data is constantly being collected,
+            stored, and processed by various entities. This vast amount of
+            information encompasses sensitive details such as names, addresses,
+            and online activity logs, which can lead to identity theft,
+            financial fraud, and reputational damage when they fall into the
+            wrong hands.
+          </p>
+          <p>
+            As consumers become increasingly aware of these risks, they demand
+            greater transparency from companies handling their personal data.
+            This has led to the emergence of data privacy regulations such as
+            HIPAA and GDPR, which serve as legal frameworks to protect
+            individuals' rights and ensure responsible data handling practices.
+          </p>
+        </div>
+        <h2 className="font-glancyr font-bold text-xl lg:text-3xl max-w-xl">
+          Why Businesses Can’t Ignore Regulations?
+        </h2>
       </div>
-      <h2 className="font-glancyr font-bold text-xl lg:text-3xl max-w-xl">
-        Why Businesses Can’t Ignore Regulations?
-      </h2>
       <div className="grid grid-cols-1 lg:grid-cols-2">
         {regulationItems.map((item) => (
           <BusinessCard
@@ -91,7 +94,7 @@ const Regulations = () => {
           />
         ))}
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-16">
+      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2">
         {certificationItems.map((item, index) => (
           <CertificateCard
             key={item.id}

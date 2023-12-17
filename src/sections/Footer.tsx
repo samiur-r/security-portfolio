@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const Footer2 = () => {
+const Footer = () => {
   return (
     <footer className="bg-light-blue text-white pt-8 px-2 lg:pt-16 relative overflow-hidden">
       <Image
@@ -11,7 +11,7 @@ const Footer2 = () => {
         alt=""
         className="absolute top-0"
       />
-      <div className="container mx-auto flex flex-col lg:flex-row gap-5 md:gap-0 items-center md:items-start relative">
+      <div className="container mx-auto flex flex-col lg:flex-row gap-5 md:gap-0 items-center lg:items-start relative">
         <div className="flex-1 flex items-center flex-col mb-8 lg:mb-0">
           <Image src="/logo_2_white.svg" width={100} height={100} alt="Logo" />
           <div className="flex mt-4 gap-4 items-start">
@@ -115,4 +115,4 @@ const Footer2 = () => {
   );
 };
 
-export default Footer2;
+export default Footer;

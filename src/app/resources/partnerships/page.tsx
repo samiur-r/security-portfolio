@@ -38,36 +38,36 @@ const brands = [
   {
     id: 1,
     title: "Google",
-    img: { src: "google.svg", width: 121, height: 40 },
+    img: { src: "/google.svg", width: 121, height: 40 },
   },
   {
     id: 2,
     title: "Paypal",
-    img: { src: "paypal.svg", width: 140, height: 37 },
+    img: { src: "/paypal.svg", width: 140, height: 37 },
   },
-  { id: 3, title: "Visa", img: { src: "visa.svg", width: 93, height: 30 } },
+  { id: 3, title: "Visa", img: { src: "/visa.svg", width: 93, height: 30 } },
   {
     id: 4,
     title: "Google",
-    img: { src: "google.svg", width: 121, height: 40 },
+    img: { src: "/google.svg", width: 121, height: 40 },
   },
   {
     id: 5,
     title: "Windows",
-    img: { src: "windows.svg", width: 140, height: 36 },
+    img: { src: "/windows.svg", width: 140, height: 36 },
   },
-  { id: 6, title: "Visa", img: { src: "visa.svg", width: 93, height: 30 } },
+  { id: 6, title: "Visa", img: { src: "/visa.svg", width: 93, height: 30 } },
   {
     id: 7,
     title: "Paypal",
-    img: { src: "paypal.svg", width: 140, height: 37 },
+    img: { src: "/paypal.svg", width: 140, height: 37 },
   },
 ];
 
 const Partnerships = () => {
   return (
-    <section className="flex flex-col gap-20 w-full">
-      <div className="flex flex-col gap-8">
+    <section className="my-12 px-5 flex flex-col gap-20 w-full">
+      <div className="container mx-auto flex flex-col gap-8">
         <p className="font-glancyr text-xl lg:text-3xl ">
           POWERFUL COLLABORATIONS
         </p>

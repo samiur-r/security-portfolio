@@ -38,7 +38,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen, isMobile, handleSetShowMenu }) => {
           <div className="flex justify-between items-center h-full">
             <div>
               <Image
-                src="logo_2_white.svg"
+                src="/logo_2_white.svg"
                 width={isMobile ? 40 : 60}
                 height={isMobile ? 40 : 60}
                 alt="Logo"
@@ -70,7 +70,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen, isMobile, handleSetShowMenu }) => {
                       {item.name}
                       {item.subItems.length > 0 && (
                         <Image
-                          src="Arrow_right_light.svg"
+                          src="/Arrow_right_light.svg"
                           alt=""
                           width={isMobile ? 20 : 50}
                           height={isMobile ? 20 : 50}
@@ -82,9 +82,9 @@ const Menu: React.FC<MenuProps> = ({ isOpen, isMobile, handleSetShowMenu }) => {
               </ul>
             </nav>
             <div className="flex gap-5 items-center mt-10">
-              <Image src="instagram.svg" width={40} height={40} alt="" />
-              <Image src="linkedin.svg" width={40} height={40} alt="" />
-              <Image src="youtube.svg" width={40} height={40} alt="" />
+              <Image src="/instagram.svg" width={40} height={40} alt="" />
+              <Image src="/linkedin.svg" width={40} height={40} alt="" />
+              <Image src="/youtube.svg" width={40} height={40} alt="" />
             </div>
           </div>
 
