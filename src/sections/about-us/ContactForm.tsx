@@ -36,9 +36,9 @@ const ContactForm: React.FC = () => {
 
   return (
     <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-10">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 items-center">
-        <div className="grid grid-cols-1 lg:col-span-2 gap-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <div className="grid grid-cols-1 xl:grid-cols-3 gap-16 items-center">
+        <div className="grid grid-cols-1 xl:col-span-2 gap-10">
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-10">
             <div>
               <label htmlFor="fullName" className="block tracking-widest">
                 Full Name *
@@ -66,7 +66,7 @@ const ContactForm: React.FC = () => {
               />
             </div>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-10">
             <div>
               <label htmlFor="phone" className="block tracking-widest">
                 Phone *

@@ -37,8 +37,11 @@ const Header: React.FC = () => {
     let afterFirstSlash = path.slice(path.indexOf("/") + 1);
 
     if (afterFirstSlash.includes("/"))
-      return afterFirstSlash.slice(0, afterFirstSlash.indexOf("/")).toUpperCase();
-    else return afterFirstSlash.toUpperCase();
+      return afterFirstSlash
+        .slice(0, afterFirstSlash.indexOf("/"))
+        .replace(/-/g, " ")
+        .toUpperCase();
+    else return afterFirstSlash.replace(/-/g, " ").toUpperCase();
   };
 
   return (
@@ -80,7 +83,7 @@ const Header: React.FC = () => {
             )}
           </div>
           {showPageTitle && (
-            <div className="font-glancyr text-xl lg:text-3xl">
+            <div className="font-glancyr text-xl xl:text-3xl">
               {parsePathName(pathname)}
             </div>
           )}

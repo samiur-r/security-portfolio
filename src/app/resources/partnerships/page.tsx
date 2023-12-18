@@ -68,14 +68,14 @@ const Partnerships = () => {
   return (
     <section className="my-12 px-5 flex flex-col gap-20 w-full">
       <div className="container mx-auto flex flex-col gap-8">
-        <p className="font-glancyr text-xl lg:text-3xl ">
+        <p className="font-glancyr text-xl xl:text-3xl ">
           POWERFUL COLLABORATIONS
         </p>
-        <h1 className="font-glancyr font-bold text-3xl lg:text-5xl max-w-3xl">
+        <h1 className="font-glancyr font-bold text-3xl xl:text-5xl max-w-3xl">
           Meet our Partners
         </h1>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 px-5">
+      <div className="grid grid-cols-1 xl:grid-cols-3 px-5">
         {partners.map((partner) => (
           <div key={partner.id}>
             <Card

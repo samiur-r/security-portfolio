@@ -24,7 +24,7 @@ const Accordion: React.FC<AccordionProps> = ({ accordionItems }) => {
                 <>
                   <dt>
                     <Disclosure.Button className="flex w-full items-start justify-between text-left">
-                      <span className="text-xl lg:text-3xl font-glancyr leading-7">
+                      <span className="text-xl xl:text-3xl font-glancyr leading-7">
                         {item.title}
                       </span>
                       <span className="ml-6 flex h-7 items-center">

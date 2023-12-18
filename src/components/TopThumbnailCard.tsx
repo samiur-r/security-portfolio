@@ -42,7 +42,7 @@ const TopThumbnailCard: React.FC<TopThumbnailCardType> = ({
             <p className="font-glancyr mt-1">{author}</p>
           </div>
         </div>
-        <h3 className="text-xl lg:text-3xl font-glancyr mt-5">{title}</h3>
+        <h3 className="text-xl xl:text-3xl font-glancyr mt-5">{title}</h3>
         <p>{bodyText}</p>
         <div>
           <Link href={cta.url} className="py-3 border-b border-light-gray">

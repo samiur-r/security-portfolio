@@ -28,15 +28,15 @@ const GuideSlider: React.FC<GuideSliderProps> = ({ guides }) => {
   };
 
   return (
-    <div className="container mx-auto p-4 lg:p-0 grid grid-cols-1 lg:grid-cols-12 gap-4 items-center rounded-lg overflow-hidden">
-      <div className="col-span-12 lg:col-span-11 flex flex-col lg:flex-row bg-light-gray">
+    <div className="container mx-auto p-4 xl:p-0 grid grid-cols-1 xl:grid-cols-12 gap-4 items-center rounded-lg overflow-hidden">
+      <div className="col-span-12 xl:col-span-11 flex flex-col xl:flex-row bg-light-gray">
         <div className="relative min-h-[345px] w-full">
           <Image src={guides[activeIndex].imageUrl} alt="" layout="fill" className="w-full object-cover h-full" />
         </div>
       </div>
 
-      <div className="col-span-12 lg:col-span-1 h-full flex flex-col lg:items-start items-center bg-light-gray">
-        <div className="hidden lg:flex lg:flex-col lg:items-center justify-between h-full w-full pt-4">
+      <div className="col-span-12 xl:col-span-1 h-full flex flex-col xl:items-start items-center bg-light-gray">
+        <div className="hidden xl:flex xl:flex-col xl:items-center justify-between h-full w-full pt-4">
           <button
             onClick={prevTestimonial}
             className="text-black disabled:text-gray-400"
@@ -63,13 +63,13 @@ const GuideSlider: React.FC<GuideSliderProps> = ({ guides }) => {
             />
           </div>
         </div>
-        <div className="flex lg:hidden justify-between w-full">
+        <div className="flex xl:hidden justify-between w-full">
           <button
             onClick={prevTestimonial}
             className="text-black disabled:text-gray-400"
             aria-label="Previous"
           >
-            <Image src="Arrow_left.svg" height={50} width={50} alt="" />
+            <Image src="/Arrow_left.svg" height={50} width={50} alt="" />
           </button>
           <div className="bg-white flex justify-center items-center w-full">
             <Image
@@ -87,7 +87,7 @@ const GuideSlider: React.FC<GuideSliderProps> = ({ guides }) => {
             className="text-black disabled:text-gray-400"
             aria-label="Next"
           >
-            <Image src="Arrow_right.svg" height={50} width={50} alt="" />
+            <Image src="/Arrow_right.svg" height={50} width={50} alt="" />
           </button>
         </div>
       </div>

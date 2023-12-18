@@ -30,7 +30,7 @@ const ClientStories = () => {
     <section className="my-12 px-5 container mx-auto flex flex-col gap-16 w-full">
       <div>
         <p>Filter Blog articles by</p>
-        <div className="flex flex-col lg:flex-row gap-10 lg:justify-between items-center lg:items-start mt-5">
+        <div className="flex flex-col xl:flex-row gap-10 xl:justify-between items-center xl:items-start mt-5">
           <select
             id="region"
             name="region"
@@ -69,7 +69,7 @@ const ClientStories = () => {
           </select>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row gap-5">
+      <div className="flex flex-col xl:flex-row gap-5">
         <div className="flex items-center gap-2">
           <Image src="/world.svg" width={24} height={24} alt="" />
           <p className="font-glancyr mt-1">UNITED STATES</p>
@@ -83,11 +83,11 @@ const ClientStories = () => {
           <p className="font-glancyr mt-1">{">1000"}</p>
         </div>
       </div>
-      <h1 className="font-glancyr font-bold text-3xl lg:text-5xl max-w-3xl">
+      <h1 className="font-glancyr font-bold text-3xl xl:text-5xl max-w-3xl">
         The Harvard Story
       </h1>
       <hr className="border-t border-light-gray"></hr>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-10">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non
           sagittis magna. Duis eu ligula ac nulla congue tincidunt ullamcorper
@@ -103,10 +103,10 @@ const ClientStories = () => {
           ornare. Aliquam sit amet dolor.
         </p>
       </div>
-      <h3 className="font-glancyr text-xl lg:text-3xl">
+      <h3 className="font-glancyr text-xl xl:text-3xl">
         Neque porro quisquam est qui
       </h3>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-10">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non
           sagittis magna. Duis eu ligula ac nulla congue tincidunt ullamcorper

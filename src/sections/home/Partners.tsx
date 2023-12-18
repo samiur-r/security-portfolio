@@ -56,7 +56,7 @@ const Partners = () => {
         ))}
       </div>
       <div className="flex justify-center mt-16 xl:mt-20 tracking-widest">
-        <Link href="#" className="pb-2 border-b">
+        <Link href="/resources/partnerships" className="pb-2 border-b">
           Explore the strength of partnerships
         </Link>
       </div>

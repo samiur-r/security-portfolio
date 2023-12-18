@@ -4,9 +4,9 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <section className="container mx-auto">
-      <div className="grid grid-cols-1 lg:grid-cols-3">
-        <div className="lg:col-span-2 flex flex-col gap-8">
-          <h2 className="font-glancyr font-bold text-3xl lg:text-5xl max-w-2xl mt-5">
+      <div className="grid grid-cols-1 xl:grid-cols-3">
+        <div className="xl:col-span-2 flex flex-col gap-8">
+          <h2 className="font-glancyr font-bold text-3xl xl:text-5xl max-w-2xl mt-5">
             Maximum Compliance,  Minimum Efforts
           </h2>
           <div className="max-w-xl">
@@ -24,7 +24,7 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <div className="mt-16 lg:mt-0">
+        <div className="mt-16 xl:mt-0 flex justify-center xl:justify-start">
           <Image
             src="/overview-hero.svg"
             alt=""

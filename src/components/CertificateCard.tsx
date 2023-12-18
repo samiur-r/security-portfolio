@@ -19,9 +19,9 @@ const CertificateCard: React.FC<CertificateCardProps> = ({
   showBorderBottom,
 }) => {
   return (
-    <div className={`${showBorderBottom ? "lg:border-b lg:pb-16" : "lg:pt-16"}`}>
+    <div className={`${showBorderBottom ? "xl:border-b xl:pb-16" : "xl:pt-16"}`}>
       <div className="px-5 flex flex-col gap-8">
-        <div className="font-glancyr text-xl lg:text-3xl">{topText}</div>
+        <div className="font-glancyr text-xl xl:text-3xl">{topText}</div>
         <Image
           src={topImage.url}
           alt=""

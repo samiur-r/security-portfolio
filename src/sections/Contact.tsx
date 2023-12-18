@@ -3,10 +3,10 @@ import Image from "next/image";
 const Contact = () => {
   return (
     <section className="mb-20 px-5">
-      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 rounded-lg bg-bright-orange">
+      <div className="container mx-auto grid grid-cols-1 xl:grid-cols-2 rounded-lg bg-bright-orange">
         <div className="flex flex-col gap-3 px-12 py-16">
-          <h3 className="text-xl lg:text-3xl font-glancyr">HAVE AN INQUIRY?</h3>
-          <h2 className="text-3xl lg:text-5xl font-bold font-glancyr">
+          <h3 className="text-xl xl:text-3xl font-glancyr">HAVE AN INQUIRY?</h3>
+          <h2 className="text-3xl xl:text-5xl font-bold font-glancyr">
             Let&apos;s talk about it!
           </h2>
           <div className="mt-8">
@@ -15,7 +15,7 @@ const Contact = () => {
             </button>
           </div>
         </div>
-        <div className="hidden lg:flex justify-end">
+        <div className="hidden xl:flex justify-end">
           <Image
             src="/contact-bg.svg"
             width={487.8}

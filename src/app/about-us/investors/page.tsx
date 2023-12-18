@@ -5,12 +5,12 @@ import ContactForm from "@/sections/about-us/ContactForm";
 const Investors = () => {
   return (
     <section className="my-12 px-5 container mx-auto flex flex-col gap-20">
-      <div className="grid grid-cols-1 lg:grid-cols-3">
-        <div className="lg:col-span-2 flex flex-col gap-8">
-          <h2 className="font-glancyr font-bold text-3xl lg:text-5xl max-w-3xl mt-5">
+      <div className="grid grid-cols-1 xl:grid-cols-3">
+        <div className="xl:col-span-2 flex flex-col gap-8">
+          <h2 className="font-glancyr font-bold text-3xl xl:text-5xl max-w-3xl mt-5">
             How to become an investor?
           </h2>
-          <h3 className="text-xl lg:text-3xl font-glancyr">KEY TAKEAWAYS</h3>
+          <h3 className="text-xl xl:text-3xl font-glancyr">KEY TAKEAWAYS</h3>
           <p className="max-w-xl">
             The two main types of investors are institutional investors, who are
             professional investors who invest business funds on behalf of
@@ -31,17 +31,17 @@ const Investors = () => {
             stocks, bonds and mutual funds.
           </p>
         </div>
-        <div className="mt-16 lg:mt-0 flex items-center justify-center lg:justify-start self-center">
+        <div className="mt-16 flex items-center justify-center xl:justify-start self-center">
           <Image
             src="/investor.svg"
             alt=""
             width={413}
             height={502}
-            className="object-contain"
+            className="object-contain w-full max-w-lg"
           />
         </div>
       </div>
-      <h3 className="text-xl lg:text-3xl font-glancyr">MESSAGE US</h3>
+      <h3 className="text-xl xl:text-3xl font-glancyr">MESSAGE US</h3>
       <div className="py-16 border-t border-b">
         <ContactForm />
       </div>

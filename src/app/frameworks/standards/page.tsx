@@ -58,53 +58,61 @@ const certificationItems = [
 
 const Standards = () => {
   return (
-    <section className="my-12 px-5 flex flex-col gap-16 w-full">
-      <div className="container mx-auto flex flex-col gap-16 w-full">
-        <h2 className="font-glancyr font-bold text-3xl lg:text-5xl mt-5">
-          Standards
-        </h2>
-        <div className="flex flex-col lg:flex-row lg:justify-between gap-16 ">
-          <p>
-            Cybersecurity presents a significant concern for businesses in the
-            contemporary landscape, and the reasons behind this are clear. A
-            single data breach, whether it affects your internal systems or
-            those of a trusted vendor or partner, can result in substantial
-            financial losses, potentially reaching a couple million. 
-          </p>
-          <p>
-            With cyber threats constantly evolving, businesses must take
-            proactive measures to safeguard their sensitive information. Two
-            widely recognized frameworks for achieving this are ISO 27001 and
-            SOC 2, which are industry-specific regulations and help
-            organizations meet compliance requirements more efficiently.
-          </p>
+    <section className="my-12 px-5 w-full">
+      <div
+        className="w-full bg-no-repeat bg-[right_top_0px] xl:bg-[right_top_80px] flex flex-col gap-16"
+        style={{
+          backgroundImage: `url(/1-filled.svg)`,
+        }}
+      >
+        <div className="container mx-auto flex flex-col gap-16">
+          <h2 className="font-glancyr font-bold text-3xl xl:text-5xl mt-5">
+            Standards
+          </h2>
+          <div className="flex flex-col xl:flex-row xl:justify-between gap-16 ">
+            <p>
+              Cybersecurity presents a significant concern for businesses in the
+              contemporary landscape, and the reasons behind this are clear. A
+              single data breach, whether it affects your internal systems or
+              those of a trusted vendor or partner, can result in substantial
+              financial losses, potentially reaching a couple million. 
+            </p>
+            <p>
+              With cyber threats constantly evolving, businesses must take
+              proactive measures to safeguard their sensitive information. Two
+              widely recognized frameworks for achieving this are ISO 27001 and
+              SOC 2, which are industry-specific regulations and help
+              organizations meet compliance requirements more efficiently.
+            </p>
+          </div>
+          <h2 className="font-glancyr font-bold text-xl xl:text-3xl max-w-xl">
+            Why Do Businesses Opt for Standards Compliance?
+          </h2>
         </div>
-        <h2 className="font-glancyr font-bold text-xl lg:text-3xl max-w-xl">
-          Why Do Businesses Opt for Standards Compliance?
-        </h2>
-      </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2">
-        {complianceItems.map((item) => (
-          <BusinessCard
-            key={item.id}
-            topText={item.topText}
-            headline={item.headline}
-            bodyText={item.bodyText}
-            borderRight={item.id % 2 === 0}
-            borderBottom={item.id === 3 || item.id === 4}
-          />
-        ))}
-      </div>
-      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2">
-        {certificationItems.map((item, index) => (
-          <CertificateCard
-            key={item.id}
-            topText={item.topText}
-            bodyText={item.bodyText}
-            topImage={item.topImage}
-            showBorderBottom={index !== 2}
-          />
-        ))}
+
+        <div className="grid grid-cols-1 xl:grid-cols-2">
+          {complianceItems.map((item) => (
+            <BusinessCard
+              key={item.id}
+              topText={item.topText}
+              headline={item.headline}
+              bodyText={item.bodyText}
+              borderRight={item.id % 2 === 0}
+              borderBottom={item.id === 3 || item.id === 4}
+            />
+          ))}
+        </div>
+        <div className="container mx-auto grid grid-cols-1 xl:grid-cols-2">
+          {certificationItems.map((item, index) => (
+            <CertificateCard
+              key={item.id}
+              topText={item.topText}
+              bodyText={item.bodyText}
+              topImage={item.topImage}
+              showBorderBottom={index !== 2}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

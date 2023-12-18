@@ -41,7 +41,7 @@ const Frameworks = ({ showCTA }: { showCTA: boolean }) => {
     <section>
       <div className="container xl:mx-auto mb-4 xl:mb-16">
         <SectionHeader
-          subHeadline="YOUR NEEDS, OUR EXPERTISE"
+          subHeadline=""
           headline="Our Frameworks, For Your Regional Preference"
         />
       </div>
@@ -60,7 +60,7 @@ const Frameworks = ({ showCTA }: { showCTA: boolean }) => {
       </div>
       {showCTA && (
         <div className="flex justify-center mt-16 xl:mt-20 tracking-widest">
-          <Link href="#" className="pb-2 border-b">
+          <Link href="/frameworks" className="pb-2 border-b">
             Explore all our frameworks
           </Link>
         </div>

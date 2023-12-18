@@ -18,7 +18,7 @@ const BusinessCard: React.FC<BusinessCardProps> = ({
   return (
     <div
       className={`px-6 py-12 border-r  border-t border-l border-light-gray ${
-        borderRight ? "border-r" : "lg:border-r-0"
+        borderRight ? "border-r" : "xl:border-r-0"
       } ${borderBottom && "border-b"}`}
     >
       <div className="">{topText}</div>

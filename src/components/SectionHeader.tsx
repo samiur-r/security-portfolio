@@ -11,8 +11,8 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
 }) => {
   return (
     <div>
-      <p className="text-xl lg:text-3xl font-glancyr">{subHeadline}</p>
-      <h2 className="font-glancyr font-bold text-3xl lg:text-5xl max-w-2xl mt-5">
+      <p className="text-xl xl:text-3xl font-glancyr">{subHeadline}</p>
+      <h2 className="font-glancyr font-bold text-3xl xl:text-5xl max-w-2xl mt-5">
         {headline}
       </h2>
     </div>

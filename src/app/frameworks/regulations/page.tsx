@@ -56,54 +56,62 @@ const certificationItems = [
 
 const Regulations = () => {
   return (
-    <section className="my-12 px-5 flex flex-col gap-16 w-full">
-      <div className="container mx-auto flex flex-col gap-16">
-        <h2 className="font-glancyr font-bold text-3xl lg:text-5xl mt-5">
-          Regulations
-        </h2>
-        <div className="flex flex-col lg:flex-row lg:justify-between gap-16 ">
-          <p>
-            In today's digital age, personal data is constantly being collected,
-            stored, and processed by various entities. This vast amount of
-            information encompasses sensitive details such as names, addresses,
-            and online activity logs, which can lead to identity theft,
-            financial fraud, and reputational damage when they fall into the
-            wrong hands.
-          </p>
-          <p>
-            As consumers become increasingly aware of these risks, they demand
-            greater transparency from companies handling their personal data.
-            This has led to the emergence of data privacy regulations such as
-            HIPAA and GDPR, which serve as legal frameworks to protect
-            individuals' rights and ensure responsible data handling practices.
-          </p>
+    <section className="my-12 px-5 w-full">
+      <div
+        className="w-full bg-no-repeat bg-[right_top_0px] xl:bg-[right_top_80px] flex flex-col gap-16"
+        style={{
+          backgroundImage: `url(/2-filled.svg)`,
+        }}
+      >
+        <div className="container mx-auto flex flex-col gap-16">
+          <h2 className="font-glancyr font-bold text-3xl xl:text-5xl mt-5">
+            Regulations
+          </h2>
+          <div className="flex flex-col xl:flex-row xl:justify-between gap-16 ">
+            <p>
+              In today's digital age, personal data is constantly being
+              collected, stored, and processed by various entities. This vast
+              amount of information encompasses sensitive details such as names,
+              addresses, and online activity logs, which can lead to identity
+              theft, financial fraud, and reputational damage when they fall
+              into the wrong hands.
+            </p>
+            <p>
+              As consumers become increasingly aware of these risks, they demand
+              greater transparency from companies handling their personal data.
+              This has led to the emergence of data privacy regulations such as
+              HIPAA and GDPR, which serve as legal frameworks to protect
+              individuals' rights and ensure responsible data handling
+              practices.
+            </p>
+          </div>
+          <h2 className="font-glancyr font-bold text-xl xl:text-3xl max-w-xl">
+            Why Businesses Can’t Ignore Regulations?
+          </h2>
         </div>
-        <h2 className="font-glancyr font-bold text-xl lg:text-3xl max-w-xl">
-          Why Businesses Can’t Ignore Regulations?
-        </h2>
-      </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2">
-        {regulationItems.map((item) => (
-          <BusinessCard
-            key={item.id}
-            topText={item.topText}
-            headline={item.headline}
-            bodyText={item.bodyText}
-            borderRight={item.id % 2 === 0}
-            borderBottom={item.id === 3 || item.id === 4}
-          />
-        ))}
-      </div>
-      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2">
-        {certificationItems.map((item, index) => (
-          <CertificateCard
-            key={item.id}
-            topText={item.topText}
-            bodyText={item.bodyText}
-            topImage={item.topImage}
-            showBorderBottom={index !== 2}
-          />
-        ))}
+        <div className="grid grid-cols-1 xl:grid-cols-2">
+          {regulationItems.map((item) => (
+            <BusinessCard
+              key={item.id}
+              topText={item.topText}
+              headline={item.headline}
+              bodyText={item.bodyText}
+              borderRight={item.id % 2 === 0}
+              borderBottom={item.id === 3 || item.id === 4}
+            />
+          ))}
+        </div>
+        <div className="container mx-auto grid grid-cols-1 xl:grid-cols-2">
+          {certificationItems.map((item, index) => (
+            <CertificateCard
+              key={item.id}
+              topText={item.topText}
+              bodyText={item.bodyText}
+              topImage={item.topImage}
+              showBorderBottom={index !== 2}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -69,7 +69,7 @@ const Blog = () => {
   return (
     <section className="my-12 px-5 container mx-auto flex flex-col gap-20 w-full">
       <div className="flex flex-col gap-8">
-        <h1 className="font-glancyr font-bold text-3xl lg:text-5xl max-w-3xl">
+        <h1 className="font-glancyr font-bold text-3xl xl:text-5xl max-w-3xl">
           Featured articles
         </h1>
         <p className="max-w-xl">
@@ -79,7 +79,7 @@ const Blog = () => {
       </div>
       <div>
         <p>Filter Blog articles by</p>
-        <div className="flex flex-col lg:flex-row gap-10 lg:justify-between items-center lg:items-start max-w-2xl mt-5">
+        <div className="flex flex-col xl:flex-row gap-10 xl:justify-between items-center xl:items-start max-w-2xl mt-5">
           <select
             id="region"
             name="region"

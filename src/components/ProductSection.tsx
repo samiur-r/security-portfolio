@@ -22,14 +22,14 @@ const ProductSection: React.FC<ProductProps> = ({
 }) => {
   return (
     <section className="mx-auto container px-5 py-5">
-      <div className="flex flex-col lg:flex-row gap-10">
+      <div className="flex flex-col xl:flex-row gap-10">
         {imageUrl && (
-          <div className="order-1 lg:order-2 flex-1 flex justify-center items-center">
+          <div className="order-1 xl:order-2 flex-1 flex justify-center items-center">
             <Image src={imageUrl} width={150} height={150} alt="" />
           </div>
         )}
         <div
-          className={`flex flex-col gap-8 flex-1 order-2 lg:order-1 max-w-2xl ${
+          className={`flex flex-col gap-8 flex-1 order-2 xl:order-1 max-w-2xl ${
             textDark && "text-dark-blue"
           }`}
         >

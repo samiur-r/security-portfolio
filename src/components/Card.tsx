@@ -59,7 +59,7 @@ const Card: React.FC<CardProps> = ({
   return (
     <div
       className={`relative ${
-        beforeImg ? "mt-[185px] lg:mt-[175px]" : "overflow-hidden "
+        beforeImg ? "mt-[185px] xl:mt-[175px]" : "overflow-hidden "
       } ${backgroundColor ? `rounded-lg` : "border"}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -67,7 +67,7 @@ const Card: React.FC<CardProps> = ({
     >
       {isHovered && hoverImageUrl ? (
         <>
-          <div className="hidden lg:block">
+          <div className="hidden xl:block">
             <Image
               src={hoverImageUrl.url}
               alt="Hover Image"
@@ -77,7 +77,7 @@ const Card: React.FC<CardProps> = ({
               }`}
             />
           </div>
-          <div className="lg:hidden">
+          <div className="xl:hidden">
             <Image
               src={hoverImageUrl.url}
               alt="Hover Image"

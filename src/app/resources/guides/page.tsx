@@ -3,7 +3,6 @@
 import Image from "next/image";
 import TopThumbnailCard from "@/components/TopThumbnailCard";
 import React, { useState } from "react";
-import TestimonialSlider from "@/components/TestimonialSlider";
 import GuideSlider from "@/components/GuideSlider";
 
 const articles = [
@@ -75,7 +74,7 @@ const Guides = () => {
 
   return (
     <section className="my-12 px-5 container mx-auto flex flex-col gap-20 w-full">
-      <div className="flex flex-col lg:flex-row gap-5">
+      <div className="flex flex-col xl:flex-row gap-5">
         <div className="flex items-center gap-2">
           <Image src="/time.svg" width={24} height={24} alt="" />
           <p className="font-glancyr mt-1">08 NOV. 2023</p>
@@ -99,15 +98,15 @@ const Guides = () => {
           <p className="font-glancyr mt-1">Download PDF</p>
         </div>
       </div>
-      <h1 className="font-glancyr font-bold text-3xl lg:text-5xl max-w-3xl">
+      <h1 className="font-glancyr font-bold text-3xl xl:text-5xl max-w-3xl">
         Leaving authentication credentials in public code
       </h1>
       <hr className="border-t border-light-gray"></hr>
       <GuideSlider guides={data} />
-      <h3 className="font-glancyr text-xl lg:text-3xl">
+      <h3 className="font-glancyr text-xl xl:text-3xl">
         DEFEND CRITICAL INFRASTRUCTURE
       </h3>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-20">
         <p>
           Using the “Shield’s Up” campaign as an example, the National
           Cybersecurity Strategy explains that the country needs a predictable
@@ -119,7 +118,7 @@ const Guides = () => {
           strategy and modernized digital infrastructures, can be models for
           critical. Specifically, the document outlines the following strategic:
         </p>
-        <ul className="list-disc mx-5 lg:mx-0">
+        <ul className="list-disc mx-5 xl:mx-0">
           <li>
             Standardized regulatory requirements across industries and
             incentivize cybersecurity investments{" "}
@@ -139,10 +138,10 @@ const Guides = () => {
           <li> Modernizing federal systems with zero trust principles</li>
         </ul>
       </div>
-      <h3 className="font-glancyr text-xl lg:text-3xl">
+      <h3 className="font-glancyr text-xl xl:text-3xl">
         DISRUPT AND DISMANTLE THREAT ACTORS
       </h3>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-20">
         <p>
           The National Cybersecurity Strategy builds on the successes of
           previous activities. For sustained and effective adversary disruption,
@@ -151,7 +150,7 @@ const Guides = () => {
           activity unprofitable and nation-state activities ineffective using
           virtual collaboration platforms for more routine.:
         </p>
-        <ul className="list-disc mx-5 lg:mx-0">
+        <ul className="list-disc mx-5 xl:mx-0">
           <li>
             Creating processes for sharing warning, technical indicators, and
             threat context across government and private partners
@@ -167,7 +166,7 @@ const Guides = () => {
         </ul>
       </div>
       <hr className="border-t border-light-gray"></hr>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 xl:grid-cols-3 gap-10 place-items-center">
         {articles.slice(0, visibleItems).map((article) => (
           <TopThumbnailCard
             key={article.id}

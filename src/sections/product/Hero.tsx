@@ -3,11 +3,11 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen pt-44 flex flex-col gap-16 mx-auto container px-5">
-      <div className="grid grid-cols-1 lg:grid-cols-3 lg:px-0">
-        <div className="lg:col-span-2 flex flex-col gap-8">
+    <section className="flex flex-col gap-16 mx-auto container px-5 mt-24">
+      <div className="grid grid-cols-1 xl:grid-cols-2 xl:px-0 gap-10">
+        <div className="flex flex-col gap-8">
           <SectionHeader
-            subHeadline="SKELDUS Platform"
+            subHeadline="SKELDUS PLATFORM"
             headline="Your Go-to Compliance, Trust, and Security Platform"
           />
 
@@ -24,21 +24,21 @@ const Hero = () => {
             </p>
           </div>
         </div>
-        <div>
+        <div className="flex-1 flex justify-center xl:justify-center">
           <Image
             src="product-hero.svg"
             alt=""
             width={509}
             height={440}
-            className="object-contain"
+            className="object-cover xl:w-full"
           />
         </div>
       </div>
       <div className="flex flex-col gap-8">
-        <p className="text-xl lg:text-3xl font-bold">
+        <p className="text-xl xl:text-3xl font-bold">
           What are these features?
         </p>
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
+        <div className="flex flex-col xl:flex-row gap-8 xl:gap-16">
           <div className="">
             <p>
               This set of innovative features empower you to easily swiftly

@@ -15,7 +15,7 @@ const Certifications = () => {
         headline="Explore below and discover which certifications your need"
       />
       <p>Certifications needed in</p>
-      <div className="flex flex-col lg:flex-row gap-10 lg:justify-between items-center lg:items-start">
+      <div className="flex flex-col xl:flex-row gap-10 xl:justify-between items-center xl:items-start">
         <select
           id="region"
           name="region"
@@ -53,8 +53,8 @@ const Certifications = () => {
           ))}
         </select>
       </div>
-      <div className="flex flex-col gap-5 lg:gap-0 lg:flex-row lg:justify-between items-center lg:items-end mt-16">
-        <div className="flex-1 flex flex-col gap-8 items-center border-b border-light-gray pb-10 overflow-hidden lg:relative">
+      <div className="flex flex-col gap-5 xl:gap-0 xl:flex-row xl:justify-between items-center xl:items-end mt-16">
+        <div className="flex-1 flex flex-col gap-8 items-center border-b border-light-gray pb-10 overflow-hidden xl:relative">
           <div
             style={{
               position: "absolute",
@@ -68,7 +68,7 @@ const Certifications = () => {
           <Image src="/certification-1.svg" width={145} height={147} alt="" />
           <p>ISO 27001</p>
         </div>
-        <div className="flex-1 flex flex-col gap-8 items-center border-b border-light-gray pb-10 overflow-hidden lg:relative">
+        <div className="flex-1 flex flex-col gap-8 items-center border-b border-light-gray pb-10 overflow-hidden xl:relative">
           <div
             style={{
               position: "absolute",

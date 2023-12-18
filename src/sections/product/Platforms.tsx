@@ -63,7 +63,7 @@ const Platforms = () => {
   }, [showProductModal]);
 
   useEffect(() => {
-    setIsMobile(window.innerWidth < 820);
+    setIsMobile(window.innerWidth < 1024);
   }, []);
 
   useEffect(() => {
@@ -306,22 +306,22 @@ const Platforms = () => {
         </svg>
         {showProductModal && (
           <div
-            className={`flex flex-col lg:flex-row items-center lg:items-start gap-5 z-10 fixed lg:absolute pt-28 lg:pt-16 top-0 ${
+            className={`flex flex-col xl:flex-row items-center xl:items-start gap-5 z-20 fixed xl:absolute pt-28 xl:pt-16 top-0 ${
               selectedProduct === 1
-                ? "lg:top-[50%] lg:translate-y-[-50%]"
+                ? "xl:top-[50%] xl:translate-y-[-50%]"
                 : selectedProduct === 2
-                ? "lg:top-[100%] lg:translate-y-[-100%]"
+                ? "xl:top-[100%] xl:translate-y-[-100%]"
                 : "top-0"
             }`}
           >
             <Image
               src={products[selectedProduct as number].loopImg}
-              width={isMobile ? 150 : 300}
-              height={isMobile ? 150 : 300}
+              width={isMobile ? 120 : 300}
+              height={isMobile ? 120 : 300}
               alt=""
-              className={`object-contain lg:left-20 lg:ml-1 relative lg:mt-[70px] 2xl:mt-[100px]`}
+              className={`object-contain xl:left-20 xl:ml-1 relative xl:mt-[70px] 2xl:mt-[100px]`}
             />
-            <div className="max-w-md px-5 relative lg:left-[40%] transform lg:translate-x-[-40%] -ml-5 lg:ml-0 pointer-events-none">
+            <div className="max-w-md px-5 relative xl:left-[40%] transform xl:translate-x-[-40%] -ml-5 xl:ml-0 pointer-events-none">
               <Card
                 key={products[selectedProduct as number].id}
                 topImageSrc={products[selectedProduct as number].topImageSrc}

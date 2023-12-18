@@ -61,17 +61,17 @@ const promises = [
 const OurStory = () => {
   return (
     <section
-      className="my-12 px-5 flex flex-col gap-20 bg-no-repeat bg-contain bg-left-top"
+      className="my-12 px-5 flex flex-col gap-20 bg-no-repeat bg-left-top"
       style={{
         backgroundImage: `url(/menu-bg.svg)`,
       }}
     >
-      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-3">
-        <div className="lg:col-span-2 flex flex-col gap-8">
-          <h2 className="font-glancyr font-bold text-3xl lg:text-5xl max-w-3xl mt-5">
+      <div className="container mx-auto grid grid-cols-1 xl:grid-cols-3">
+        <div className="xl:col-span-2 flex flex-col gap-8">
+          <h2 className="font-glancyr font-bold text-3xl xl:text-5xl max-w-3xl mt-5">
             Driving Compliance and Trust? Mission Accomplished. 
           </h2>
-          <h3 className="text-xl lg:text-3xl font-glancyr">SKELDUS story</h3>
+          <h3 className="text-xl xl:text-3xl font-glancyr">SKELDUS STORY</h3>
           <div className="max-w-xl">
             <p>
               Once upon a time, in today's digital landscape, the world started
@@ -86,7 +86,7 @@ const OurStory = () => {
             </p>
           </div>
         </div>
-        <div className="mt-16 lg:mt-0 flex items-center justify-center lg:justify-start">
+        <div className="mt-16 xl:mt-0 flex items-center justify-center xl:justify-start">
           <Image
             src="about-us-hero.svg"
             alt=""
@@ -96,7 +96,7 @@ const OurStory = () => {
           />
         </div>
       </div>
-      <div className="container mx-auto flex flex-col lg:flex-row lg:justify-between gap-16">
+      <div className="container mx-auto flex flex-col xl:flex-row xl:justify-between gap-16">
         <p>
           SKELDUS. Does the name ring a bell? It should. Our identity draws from
           the Scandinavian word 'SKELDUS,' meaning 'shield,' and embodies the
@@ -108,8 +108,8 @@ const OurStory = () => {
           compliance, security, and trust, all rolled into one.
         </p>
       </div>
-      <h3 className="container mx-auto text-xl lg:text-3xl font-glancyr">SKELDUS IN NUMBERS</h3>
-      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-4 gap-10">
+      <h3 className="container mx-auto text-xl xl:text-3xl font-glancyr">SKELDUS IN NUMBERS</h3>
+      <div className="container mx-auto grid grid-cols-1 xl:grid-cols-4 gap-10">
         {insights.map((insight) => (
           <KeyCard
             key={insight.id}
@@ -121,7 +121,7 @@ const OurStory = () => {
         ))}
       </div>
       <div className="container mx-auto flex flex-col gap-10">
-        <h3 className="text-xl lg:text-3xl font-glancyr">
+        <h3 className="text-xl xl:text-3xl font-glancyr">
           The SKELDUS Promise to You
         </h3>
         <p className="max-w-lg">
@@ -131,7 +131,7 @@ const OurStory = () => {
           Here's a glimpse into what we hold dear:
         </p>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 px-5 lg:px-0">
+      <div className="grid grid-cols-1 xl:grid-cols-3 px-5 xl:px-0">
         {promises.map((promise) => (
           <Card
             key={promise.id}

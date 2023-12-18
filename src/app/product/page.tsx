@@ -12,8 +12,8 @@ import ProductSection from "@/components/ProductSection";
 
 export default function Product() {
   return (
-    <section className="flex flex-col gap-20 mb-20">
-      <Modal autoOpenDelay={1000}>
+    <section className="flex flex-col gap-20 my-12">
+      <Modal autoOpenDelay={3000}>
         <ProductSection
           textDark
           subHeadline="SKELDUS Security"

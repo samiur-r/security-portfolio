@@ -3,16 +3,18 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-light-blue text-white pt-8 px-2 lg:pt-16 relative overflow-hidden">
-      <Image
-        src="/footer-bg-logo.svg"
-        width={675}
-        height={675}
-        alt=""
-        className="absolute top-0"
-      />
-      <div className="container mx-auto flex flex-col lg:flex-row gap-5 md:gap-0 items-center lg:items-start relative">
-        <div className="flex-1 flex items-center flex-col mb-8 lg:mb-0">
+    <footer className="bg-light-blue text-white pt-8 px-2 xl:pt-16 relative overflow-hidden">
+      <Link href="/">
+        <Image
+          src="/footer-bg-logo.svg"
+          width={675}
+          height={675}
+          alt=""
+          className="absolute top-0 z-10"
+        />
+      </Link>
+      <div className="container mx-auto flex flex-col xl:flex-row gap-5 md:gap-0 items-center xl:items-start relative">
+        <div className="flex-1 flex items-center flex-col mb-8 xl:mb-0">
           <Image src="/logo_2_white.svg" width={100} height={100} alt="Logo" />
           <div className="flex mt-4 gap-4 items-start">
             <Image
@@ -39,67 +41,67 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex-1 flex justify-center">
-          <div className="text-center lg:text-start">
+          <div className="text-center xl:text-start">
             <h4 className="font-glancyr font-bold mb-2">QUICK LINKS</h4>
             <ul>
               <li>
-                <Link href="#">Products</Link>
+                <Link href="/product">Products</Link>
               </li>
               <li>
-                <Link href="#">Solutions & Frameworks</Link>
+                <Link href="/frameworks">Solutions & Frameworks</Link>
               </li>
             </ul>
           </div>
         </div>
         <div className="flex-1 flex justify-center">
-          <div className="text-center lg:text-start">
+          <div className="text-center xl:text-start">
             <h4 className="font-glancyr font-bold mb-2">ABOUT US</h4>
             <ul>
               <li>
-                <Link href="#">Our Story</Link>
+                <Link href="/about-us">Our Story</Link>
               </li>
               <li>
-                <Link href="#">Careers</Link>
+                <Link href="/about-us/careers">Careers</Link>
               </li>
               <li>
-                <Link href="#">Investors</Link>
+                <Link href="/about-us/investors">Investors</Link>
               </li>
               <li>
-                <Link href="#">Press</Link>
+                <Link href="/about-us/press">Press</Link>
               </li>
             </ul>
           </div>
         </div>
         <div className="flex-1 flex justify-center">
-          <div className="text-center lg:text-start">
+          <div className="text-center xl:text-start">
             <h4 className="font-glancyr font-bold mb-2">
               CLIENTS & PARTNERSHIP
             </h4>
             <ul>
               <li>
-                <Link href="#">Testimonials</Link>
+                <Link href="/resources/client-stories">Testimonials</Link>
               </li>
               <li>
-                <Link href="#">Partners</Link>
+                <Link href="/resources/partnerships">Partners</Link>
               </li>
             </ul>
           </div>
         </div>
         <div className="flex-1 flex justify-center">
-          <div className="text-center lg:text-start">
-            <h4 className="font-glancyr font-bold mb-2">RESSOURCES</h4>
+          <div className="text-center xl:text-start">
+            <h4 className="font-glancyr font-bold mb-2">RESOURCES</h4>
             <ul>
               <li>
-                <Link href="#">Blog</Link>
+                <Link href="/resources">Blog</Link>
               </li>
               <li>
-                <Link href="#">Guides</Link>
+                <Link href="/resources/guides">Guides</Link>
               </li>
               <li>
-                <Link href="#">Glossary</Link>
+                <Link href="/resources/glossary">Glossary</Link>
               </li>
               <li>
-                <Link href="#">Events</Link>
+                <Link href="/resources/events">Events</Link>
               </li>
               <li>
                 <Link href="#">Help Center</Link>

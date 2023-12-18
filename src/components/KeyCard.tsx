@@ -16,7 +16,7 @@ const KeyCard: React.FC<CardProps> = ({
   bodyText,
 }) => {
   return (
-    <div className={`p-5 rounded-lg bg-${backgroundColor}`}>
+    <div className={`p-5 rounded-lg ${backgroundColor === "black" ? 'bg-[#000]' : `bg-${backgroundColor}`}`}>
       <div className="flex justify-end mb-16">
         <Image
           src={topImg.url}
@@ -25,7 +25,7 @@ const KeyCard: React.FC<CardProps> = ({
           height={topImg.height}
         />
       </div>
-      <h2 className="font-glancyr font-bold text-3xl lg:text-5xl">
+      <h2 className="font-glancyr font-bold text-3xl xl:text-5xl">
         {headline}
       </h2>
       <p>{bodyText}</p>

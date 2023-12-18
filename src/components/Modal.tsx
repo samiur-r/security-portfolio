@@ -27,12 +27,12 @@ const Modal: React.FC<ModalProps> = ({ autoOpenDelay = 5000, children }) => {
 
   return (
     <div
-      className="fixed inset-0 bg-dark-blue bg-opacity-50 overflow-y-auto h-full w-full z-20"
+      className="fixed inset-0 bg-dark-blue bg-opacity-50 overflow-y-auto min-h-screen h-full w-full z-20"
       onClick={handleClose}
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="relative top-0 lg:my-5 mx-auto p-5 border w-full container shadow-lg rounded-md bg-light-gray"
+        className="relative top-0 xl:my-5 mx-auto p-5 border w-full container shadow-lg rounded-md bg-light-gray"
       >
         <div className="flex justify-end">
           <Image

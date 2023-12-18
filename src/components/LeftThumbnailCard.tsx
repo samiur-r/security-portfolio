@@ -21,7 +21,7 @@ const LeftThumbnailCard: React.FC<LeftThumbnailCardType> = ({
   bodyText,
 }) => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+    <div className="grid grid-cols-1 xl:grid-cols-3 gap-10">
       <div>
         <Image
           src={thumbnailImage}
@@ -31,8 +31,8 @@ const LeftThumbnailCard: React.FC<LeftThumbnailCardType> = ({
           className="h-full object-cover"
         />
       </div>
-      <div className="lg:col-span-2 my-2">
-        <div className="flex flex-col lg:flex-row gap-5">
+      <div className="xl:col-span-2 my-2">
+        <div className="flex flex-col xl:flex-row gap-5">
           <div className="flex items-center gap-2">
             <Image src="/time.svg" width={24} height={24} alt="" />
             <p className="font-glancyr mt-1">{date}</p>
@@ -52,7 +52,7 @@ const LeftThumbnailCard: React.FC<LeftThumbnailCardType> = ({
             <Image src="/fb-small.svg" width={20} height={20} alt="" />
           </div>
         </div>
-        <h3 className="text-xl lg:text-3xl font-glancyr mt-10 max-w-md">
+        <h3 className="text-xl xl:text-3xl font-glancyr mt-10 max-w-md">
           {title}
         </h3>
         <p
