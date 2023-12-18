@@ -1,9 +1,10 @@
 "use client";
 
+import { useEffect, useState } from "react";
+import Image from "next/image";
+
 import Card from "@/components/Card";
 import SectionHeader from "@/components/SectionHeader";
-import Image from "next/image";
-import { useEffect, useState } from "react";
 
 const products = [
   {

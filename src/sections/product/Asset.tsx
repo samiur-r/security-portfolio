@@ -3,7 +3,7 @@ import ProductSection from "@/components/ProductSection";
 const assetList = [
   {
     id: 1,
-    imageUrl: "dashboard.svg",
+    imageUrl: "/dashboard.png",
     title: "PEOPLE",
     description:
       "Your team's compliance is vital, and with SKELDUS, you can efficiently track the status of your employees' requirements. Know exactly which compliance tasks are open or fulfilled, making on-boarding and off-boarding a breeze.",
@@ -11,7 +11,7 @@ const assetList = [
   },
   {
     id: 2,
-    imageUrl: "dashboard.svg",
+    imageUrl: "/dashboard.png",
     title: "PEOPLE 2",
     description:
       "2 Your team's compliance is vital, and with SKELDUS, you can efficiently track the status of your employees' requirements. Know exactly which compliance tasks are open or fulfilled, making on-boarding and off-boarding a breeze.",

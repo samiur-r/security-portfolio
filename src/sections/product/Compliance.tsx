@@ -3,7 +3,7 @@ import ProductSection from "@/components/ProductSection";
 const complianceList = [
   {
     id: 1,
-    imageUrl: "dashboard.svg",
+    imageUrl: "/dashboard.png",
     title: "SIMPLIFY COMPLIANCE WITH OUR CONTROLS",
     description:
       "Structure and customize your frameworks by tailoring controls and policies to your specific needs, link them to respective frameworks and sections, and keep your documents organized. All the essential aspects of compliance are at your fingertips, without any unnecessary complexity.",
@@ -11,7 +11,7 @@ const complianceList = [
   },
   {
     id: 2,
-    imageUrl: "dashboard.svg",
+    imageUrl: "/dashboard.png",
     title: "SIMPLIFY COMPLIANCE WITH OUR CONTROLS 2",
     description:
       "2 Structure and customize your frameworks by tailoring controls and policies to your specific needs, link them to respective frameworks and sections, and keep your documents organized. All the essential aspects of compliance are at your fingertips, without any unnecessary complexity.",

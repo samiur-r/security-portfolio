@@ -1,14 +1,15 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
+
 import TopThumbnailCard from "@/components/TopThumbnailCard";
-import React, { useState } from "react";
 import GuideSlider from "@/components/GuideSlider";
 
 const articles = [
   {
     id: 1,
-    imageUrl: "/article-1.svg",
+    imageUrl: "/article-1.png",
     date: "08 NOV. 2023",
     author: "BY JANE DOE",
     title: "TITLE OF THE ARTICLE HERE",
@@ -18,7 +19,7 @@ const articles = [
   },
   {
     id: 2,
-    imageUrl: "/article-2.svg",
+    imageUrl: "/article-2.png",
     date: "08 NOV. 2023",
     author: "BY JANE DOE",
     title: "TITLE OF THE ARTICLE HERE",
@@ -28,7 +29,7 @@ const articles = [
   },
   {
     id: 3,
-    imageUrl: "/article-3.svg",
+    imageUrl: "/article-3.png",
     date: "08 NOV. 2023",
     author: "BY JANE DOE",
     title: "TITLE OF THE ARTICLE HERE",
@@ -38,7 +39,7 @@ const articles = [
   },
   {
     id: 4,
-    imageUrl: "/article-4.svg",
+    imageUrl: "/article-4.png",
     date: "08 NOV. 2023",
     author: "BY JANE DOE",
     title: "TITLE OF THE ARTICLE HERE",
@@ -51,14 +52,14 @@ const articles = [
 const data = [
   {
     id: 1,
-    imageUrl: "/guide-slide-1.svg",
+    imageUrl: "/guide-slide-1.png",
     text: "I can't emphasize enough the peace of mind and confidence that investing in robust cybersecurity measures has brought to our organization.",
     name: "John Wilson",
     title: "Chief Executive Officer, Harvard University",
   },
   {
     id: 2,
-    imageUrl: "/guide-slide-2.svg",
+    imageUrl: "/guide-slide-2.png",
     text: "I can't emphasize enough the peace of mind and confidence that investing in robust cybersecurity measures has brought to our organization. 2",
     name: "John Wilson 2",
     title: "Chief Executive Officer, Harvard University 2",

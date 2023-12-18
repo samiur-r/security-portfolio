@@ -1,8 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import React from "react";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 type TabItemType = { id: number; title: string; url: string };
 

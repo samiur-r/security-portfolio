@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+
 import colors from "@/styles/colors";
 
 type Brand = {

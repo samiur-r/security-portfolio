@@ -1,7 +1,8 @@
+import React from "react";
+import Image from "next/image";
+
 import ProductSlider, { Product } from "@/components/ProductSlider";
 import SectionHeader from "@/components/SectionHeader";
-import Image from "next/image";
-import React from "react";
 
 type ProductProps = {
   subHeadline: string;

@@ -1,5 +1,6 @@
-import SectionHeader from "@/components/SectionHeader";
 import Image from "next/image";
+
+import SectionHeader from "@/components/SectionHeader";
 
 const Hero = () => {
   return (

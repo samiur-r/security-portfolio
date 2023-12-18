@@ -3,7 +3,7 @@ import ProductSection from "@/components/ProductSection";
 const integrationsList = [
   {
     id: 1,
-    imageUrl: "dashboard-integrations.svg",
+    imageUrl: "/dashboard-integrations.png",
     title: "PEOPLE",
     description:
       "Your team's compliance is vital, and with SKELDUS, you can efficiently track the status of your employees' requirements. Know exactly which compliance tasks are open or fulfilled, making on-boarding and off-boarding a breeze.",

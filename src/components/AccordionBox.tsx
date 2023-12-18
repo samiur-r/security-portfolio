@@ -1,4 +1,5 @@
 import React from "react";
+
 import Accordion, { AccordionItemProps } from "./Accordion";
 
 type AccordionBoxProps = {

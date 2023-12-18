@@ -1,12 +1,13 @@
 "use client";
 
-import TopThumbnailCard from "@/components/TopThumbnailCard";
 import React, { useState } from "react";
+
+import TopThumbnailCard from "@/components/TopThumbnailCard";
 
 const articles = [
   {
     id: 1,
-    imageUrl: "/article-1.svg",
+    imageUrl: "/article-1.png",
     date: "08 NOV. 2023",
     author: "BY JANE DOE",
     title: "TITLE OF THE ARTICLE HERE",
@@ -16,7 +17,7 @@ const articles = [
   },
   {
     id: 2,
-    imageUrl: "/article-2.svg",
+    imageUrl: "/article-2.png",
     date: "08 NOV. 2023",
     author: "BY JANE DOE",
     title: "TITLE OF THE ARTICLE HERE",
@@ -26,7 +27,7 @@ const articles = [
   },
   {
     id: 3,
-    imageUrl: "/article-3.svg",
+    imageUrl: "/article-3.png",
     date: "08 NOV. 2023",
     author: "BY JANE DOE",
     title: "TITLE OF THE ARTICLE HERE",
@@ -36,7 +37,7 @@ const articles = [
   },
   {
     id: 4,
-    imageUrl: "/article-4.svg",
+    imageUrl: "/article-4.png",
     date: "08 NOV. 2023",
     author: "BY JANE DOE",
     title: "TITLE OF THE ARTICLE HERE",
@@ -46,7 +47,7 @@ const articles = [
   },
   {
     id: 5,
-    imageUrl: "/article-5.svg",
+    imageUrl: "/article-5.png",
     date: "08 NOV. 2023",
     author: "BY JANE DOE",
     title: "TITLE OF THE ARTICLE HERE",
@@ -56,7 +57,7 @@ const articles = [
   },
   {
     id: 6,
-    imageUrl: "/article-6.svg",
+    imageUrl: "/article-6.png",
     date: "08 NOV. 2023",
     author: "BY JANE DOE",
     title: "TITLE OF THE ARTICLE HERE",
@@ -66,7 +67,7 @@ const articles = [
   },
   {
     id: 7,
-    imageUrl: "/article-5.svg",
+    imageUrl: "/article-5.png",
     date: "08 NOV. 2023",
     author: "BY JANE DOE",
     title: "TITLE OF THE ARTICLE HERE",

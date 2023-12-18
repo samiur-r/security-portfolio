@@ -3,7 +3,7 @@ import ProductSection from "@/components/ProductSection";
 const trustList = [
   {
     id: 1,
-    imageUrl: "dashboard.svg",
+    imageUrl: "/dashboard.png",
     title: "boost productivity with automated questionnaire processes",
     description:
       "Achieve maximum productivity by automating the questionnaire processes essential for compliance and security assessments. Our cutting-edge technology simplifies and accelerates the traditionally time-consuming and manual task of collecting, distributing, and analyzing security questionnaires.",
@@ -11,7 +11,7 @@ const trustList = [
   },
   {
     id: 2,
-    imageUrl: "dashboard.svg",
+    imageUrl: "/dashboard.png",
     title: "boost productivity with automated questionnaire processes 2",
     description:
       "2 Achieve maximum productivity by automating the questionnaire processes essential for compliance and security assessments. Our cutting-edge technology simplifies and accelerates the traditionally time-consuming and manual task of collecting, distributing, and analyzing security questionnaires.",

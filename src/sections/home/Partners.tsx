@@ -1,6 +1,7 @@
+import Link from "next/link";
+
 import Card from "@/components/Card";
 import SectionHeader from "@/components/SectionHeader";
-import Link from "next/link";
 
 const partners = [
   {

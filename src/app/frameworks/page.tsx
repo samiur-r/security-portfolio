@@ -1,5 +1,3 @@
-import React from "react";
-
 import Hero from "@/sections/frameworks/Hero";
 import Frameworks from "@/sections/home/Frameworks";
 import Certifications from "@/sections/frameworks/Certifications";

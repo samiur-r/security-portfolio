@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+
 import ContactForm from "@/sections/about-us/ContactForm";
 
 const Investors = () => {

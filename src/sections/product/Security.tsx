@@ -3,7 +3,7 @@ import ProductSection from "@/components/ProductSection";
 const securityList = [
   {
     id: 1,
-    imageUrl: "dashboard.svg",
+    imageUrl: "/dashboard.png",
     title: "ACCESS CONTROLS, TAKE CHARGE OF YOUR SYSTEM",
     description:
       "Are you concerned about who has access of your system? With SKELDUS, manage user access and ensure only authorized individuals enter, while preventing unauthorized users minimizing risks and enhancing security.",
@@ -11,7 +11,7 @@ const securityList = [
   },
   {
     id: 2,
-    imageUrl: "dashboard.svg",
+    imageUrl: "/dashboard.png",
     title: "ACCESS CONTROLS, TAKE CHARGE OF YOUR SYSTEM 2",
     description:
       "2 Are you concerned about who has access of your system? With SKELDUS, manage user access and ensure only authorized individuals enter, while preventing unauthorized users minimizing risks and enhancing security.",

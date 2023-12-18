@@ -1,7 +1,7 @@
+import Link from "next/link";
+
 import Card from "@/components/Card";
 import SectionHeader from "@/components/SectionHeader";
-import Image from "next/image";
-import Link from "next/link";
 
 const frameworks = [
   {

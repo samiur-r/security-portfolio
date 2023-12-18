@@ -3,9 +3,9 @@
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
 
 import Navigation from "@/components/Navigation";
-import Link from "next/link";
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);

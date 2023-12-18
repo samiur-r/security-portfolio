@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
-import Card from "@/components/Card";
 import Image from "next/image";
+
+import Card from "@/components/Card";
 import BusinessCard from "@/components/BusinessCard";
 
 const careers = [

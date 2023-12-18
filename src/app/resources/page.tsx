@@ -1,12 +1,12 @@
 "use client";
+import React, { useState } from "react";
 
 import LeftThumbnailCard from "@/components/LeftThumbnailCard";
-import React, { useState } from "react";
 
 const articles = [
   {
     id: 1,
-    imageUrl: "featured-article-1.svg",
+    imageUrl: "/featured-article-1.png",
     date: "08 NOV. 2023",
     author: "BY JANE DOE",
     title: "Leaving Authentication Credentials in Public Code",
@@ -16,7 +16,7 @@ const articles = [
   },
   {
     id: 2,
-    imageUrl: "featured-article-2.svg",
+    imageUrl: "/featured-article-2.png",
     date: "08 NOV. 2023",
     author: "BY JANE DOE",
     title: "Leaving Authentication Credentials in Public Code",
@@ -26,7 +26,7 @@ const articles = [
   },
   {
     id: 3,
-    imageUrl: "featured-article-3.svg",
+    imageUrl: "/featured-article-3.png",
     date: "08 NOV. 2023",
     author: "BY JANE DOE",
     title: "Leaving Authentication Credentials in Public Code",
@@ -36,7 +36,7 @@ const articles = [
   },
   {
     id: 4,
-    imageUrl: "featured-article-4.svg",
+    imageUrl: "/featured-article-4.png",
     date: "08 NOV. 2023",
     author: "BY JANE DOE",
     title: "Leaving Authentication Credentials in Public Code",
@@ -46,7 +46,7 @@ const articles = [
   },
   {
     id: 5,
-    imageUrl: "featured-article-3.svg",
+    imageUrl: "/featured-article-3.png",
     date: "08 NOV. 2023",
     author: "BY JANE DOE",
     title: "Leaving Authentication Credentials in Public Code",
