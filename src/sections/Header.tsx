@@ -59,7 +59,7 @@ const Header: React.FC = () => {
         } transition-all duration-300 ease-in-out z-20`}
       >
         <div className="flex justify-between items-center h-full container mx-auto">
-          <div>
+          <div className="">
             {pathname && showPageTitle !== undefined && (
               <Link href="/">
                 {isScrolled || showPageTitle ? (
@@ -76,7 +76,7 @@ const Header: React.FC = () => {
                     width={147}
                     height={34}
                     alt="Logo"
-                    className="cursor-pointer"
+                    className="cursor-pointer w-full"
                   />
                 )}
               </Link>

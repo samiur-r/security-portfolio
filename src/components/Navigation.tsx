@@ -133,7 +133,7 @@ const Navigation: React.FC<NavigationProps> = ({ isOpen, isMobile, handleSetShow
                       onMouseLeave={() => setHoveredMenu(null)}
                     >
                       {activeMenu === item.name && (
-                        <div className="absolute -ml-4 xl:-ml-6 -mt-1 xl:top-[50%] xl:transform xl:translate-y-[-50%]">
+                        <div className="absolute -ml-4 xl:-ml-6 mt-.5 xl:-mt-1 xl:top-[50%] xl:transform xl:translate-y-[-50%]">
                           <Image
                             src="/ellipse.svg"
                             alt=""
@@ -171,7 +171,7 @@ const Navigation: React.FC<NavigationProps> = ({ isOpen, isMobile, handleSetShow
                   ?.subItems.map((subItem) => (
                     <li key={subItem.name} className="mb-4">
                       <button
-                        className="font-glancyr xl:text-4xl tracking-widest"
+                        className="font-glancyr xl:text-4xl tracking-widest text-start"
                         onClick={() =>
                           handleMenuItemClick(subItem.name, subItem.link)
                         }

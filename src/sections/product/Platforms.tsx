@@ -27,7 +27,7 @@ const products = [
     ctaText: "Know more",
     backgroundColor: "brightOrange",
     hoverImageUrl: { url: "/security.jpg", width: 480, height: 600 },
-    loopImg: "/loop-compliance.png",
+    loopImg: "/loop-compliance-2.png",
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ const products = [
     ctaText: "Know more",
     backgroundColor: "lightBlue",
     hoverImageUrl: { url: "/trust.jpg", width: 480, height: 600 },
-    loopImg: "/loop-compliance.png",
+    loopImg: "/loop-compliance-3.png",
   },
 ];
 

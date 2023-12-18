@@ -37,8 +37,8 @@ const Modal: React.FC<ModalProps> = ({ autoOpenDelay = 5000, children }) => {
         <div className="flex justify-end">
           <Image
             src="x-mark.svg"
-            height={60}
-            width={60}
+            height={50}
+            width={50}
             alt=""
             onClick={handleClose}
             className="cursor-pointer"
