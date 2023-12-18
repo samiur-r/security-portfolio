@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 
-import Menu from "@/components/Menu";
+import Navigation from "@/components/Navigation";
 import Link from "next/link";
 
 const Header: React.FC = () => {
@@ -22,7 +22,7 @@ const Header: React.FC = () => {
   }, [pathname]);
 
   useEffect(() => {
-    setIsMobile(window.innerWidth < 820);
+    setIsMobile(window.innerWidth < 1024);
 
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
@@ -43,7 +43,7 @@ const Header: React.FC = () => {
 
   return (
     <section>
-      <Menu
+      <Navigation
         isOpen={showMenu}
         handleSetShowMenu={setShowMenu}
         isMobile={isMobile}
